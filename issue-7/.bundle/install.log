@@ -1,0 +1,22 @@
+# Logfile created on 2017-06-06 02:23:57 -0400 by logger.rb/41954
+I, [2017-06-06T02:23:57.652748 #49049]  INFO -- : 0:  public_suffix (2.0.5) from /Users/admin/.rvm/gems/ruby-2.1.0@bushwick-review/specifications/public_suffix-2.0.5.gemspec
+I, [2017-06-06T02:23:57.877360 #49049]  INFO -- : 0:  addressable (2.5.1) from /Users/admin/.rvm/gems/ruby-2.1.0@bushwick-review/specifications/addressable-2.5.1.gemspec
+I, [2017-06-06T02:23:57.994263 #49049]  INFO -- : 0:  colorator (1.1.0) from /Users/admin/.rvm/gems/ruby-2.1.0@bushwick-review/specifications/colorator-1.1.0.gemspec
+I, [2017-06-06T02:24:13.313630 #49049]  INFO -- : 0:  ffi (1.9.18) from /Users/admin/.rvm/gems/ruby-2.1.0@bushwick-review/specifications/ffi-1.9.18.gemspec
+I, [2017-06-06T02:24:13.441620 #49049]  INFO -- : 0:  forwardable-extended (2.6.0) from /Users/admin/.rvm/gems/ruby-2.1.0@bushwick-review/specifications/forwardable-extended-2.6.0.gemspec
+I, [2017-06-06T02:24:14.097021 #49049]  INFO -- : 0:  sass (3.4.24) from /Users/admin/.rvm/gems/ruby-2.1.0@bushwick-review/specifications/sass-3.4.24.gemspec
+I, [2017-06-06T02:24:14.212047 #49049]  INFO -- : 0:  jekyll-sass-converter (1.5.0) from /Users/admin/.rvm/gems/ruby-2.1.0@bushwick-review/specifications/jekyll-sass-converter-1.5.0.gemspec
+I, [2017-06-06T02:24:14.434070 #49049]  INFO -- : 0:  rb-fsevent (0.9.8) from /Users/admin/.rvm/gems/ruby-2.1.0@bushwick-review/specifications/rb-fsevent-0.9.8.gemspec
+I, [2017-06-06T02:24:14.581976 #49049]  INFO -- : 0:  rb-inotify (0.9.8) from /Users/admin/.rvm/gems/ruby-2.1.0@bushwick-review/specifications/rb-inotify-0.9.8.gemspec
+I, [2017-06-06T02:24:14.816158 #49049]  INFO -- : 0:  listen (3.0.8) from /Users/admin/.rvm/gems/ruby-2.1.0@bushwick-review/specifications/listen-3.0.8.gemspec
+I, [2017-06-06T02:24:14.920050 #49049]  INFO -- : 0:  jekyll-watch (1.5.0) from /Users/admin/.rvm/gems/ruby-2.1.0@bushwick-review/specifications/jekyll-watch-1.5.0.gemspec
+I, [2017-06-06T02:24:15.812457 #49049]  INFO -- : 0:  kramdown (1.13.2) from /Users/admin/.rvm/gems/ruby-2.1.0@bushwick-review/specifications/kramdown-1.13.2.gemspec
+I, [2017-06-06T02:24:16.095891 #49049]  INFO -- : 0:  liquid (3.0.6) from /Users/admin/.rvm/gems/ruby-2.1.0@bushwick-review/specifications/liquid-3.0.6.gemspec
+I, [2017-06-06T02:24:16.296986 #49049]  INFO -- : 0:  mercenary (0.3.6) from /Users/admin/.rvm/gems/ruby-2.1.0@bushwick-review/specifications/mercenary-0.3.6.gemspec
+I, [2017-06-06T02:24:16.405239 #49049]  INFO -- : 0:  pathutil (0.14.0) from /Users/admin/.rvm/gems/ruby-2.1.0@bushwick-review/specifications/pathutil-0.14.0.gemspec
+I, [2017-06-06T02:24:16.887405 #49049]  INFO -- : 0:  rouge (1.11.1) from /Users/admin/.rvm/gems/ruby-2.1.0@bushwick-review/specifications/rouge-1.11.1.gemspec
+I, [2017-06-06T02:24:17.092524 #49049]  INFO -- : 0:  safe_yaml (1.0.4) from /Users/admin/.rvm/gems/ruby-2.1.0@bushwick-review/specifications/safe_yaml-1.0.4.gemspec
+I, [2017-06-06T02:24:17.404908 #49049]  INFO -- : 0:  jekyll (3.4.3) from /Users/admin/.rvm/gems/ruby-2.1.0@bushwick-review/specifications/jekyll-3.4.3.gemspec
+I, [2017-06-06T02:24:17.584161 #49049]  INFO -- : 0:  jekyll-feed (0.9.2) from /Users/admin/.rvm/gems/ruby-2.1.0@bushwick-review/specifications/jekyll-feed-0.9.2.gemspec
+I, [2017-06-06T02:24:17.737381 #49049]  INFO -- : 0:  minima (2.1.1) from /Users/admin/.rvm/gems/ruby-2.1.0@bushwick-review/specifications/minima-2.1.1.gemspec
+I, [2017-06-06T02:24:17.738282 #49049]  INFO -- : 0:  bundler (1.5.1) from /Users/admin/.rvm/gems/ruby-2.1.0@global/specifications/bundler-1.5.1.gemspec
