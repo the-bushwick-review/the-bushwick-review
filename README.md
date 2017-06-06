@@ -1,2 +1,2 @@
 # bushwick-review
-The Bushwick Review Issue 7 site
+The Bushwick Review Issue 7
