@@ -56,7 +56,7 @@
 	-webkit-transform: $transform;
           transform: $transform;
 }
-// TEXT
+/* TEXT */
 @mixin monospace(){
   font-family: 'Roboto Mono', monospace;
 }
