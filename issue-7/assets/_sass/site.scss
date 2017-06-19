@@ -1,8 +1,60 @@
 body{
   background:$white;
-  font-family: helvetica, arial, verdana, sans-serif;
+  @include sans-serif();
   font-size:14px;
   color:$body;
   position:relative;
-  margin:10px;
+}
+.fixed-hero{
+  background-image:url('../img/cover.jpg');
+  min-height:800px;
+  background-attachment:fixed;
+  background-position:center;
+  background-repteat:no-repeat;
+  background-size:cover;
+  margin-bottom:60px;
+}
+#logo{
+  position:fixed;
+  top:0;
+  left:15px;
+  max-width:200px;
+  z-index:999;
+}
+#navigation{
+  position:fixed;
+  bottom:15px;
+  left:30px;
+  z-index:999;
+  font-size:4em;
+  font-weight:800;
+
+  a{
+    color:$body;
+    text-decoration:underline;
+  }
+  ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+}
+#issue-number{
+  position:fixed;
+  z-index:999;
+  top:50%;
+  right:0;
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+  transform-origin: 100% 0;
+  height:4em;;
+  line-height:4em;
+  text-align:left;
+  color:$white;
+  font-size:4em;
+}
+// TEXT
+p{
+
 }

@@ -56,3 +56,10 @@
 	-webkit-transform: $transform;
           transform: $transform;
 }
+// TEXT
+@mixin monospace(){
+  font-family: 'Roboto Mono', monospace;
+}
+@mixin sans-serif(){
+  font-family: helvetica, verdana, arial, sans-serif;
+}
