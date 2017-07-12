@@ -102,3 +102,28 @@ p{
 .lowercase{
   text-transform:lowercase !important;
 }
+// Helpers
+.margin-bottom-15{margin-bottom:15px;}
+.margin-bottom-30{margin-bottom:30px;}
+.margin-bottom-60{margin-bottom:60px;}
+.margin-bottom-90{margin-bottom:90px;}
+.margin-bottom-120{margin-bottom:120px;}
+
+// Bootstrap override
+ol.carousel-indicators{
+  bottom:30px;
+
+  li{
+    width:0;
+    height:0;
+    border-left:15px solid transparent;
+    border-right:15px solid transparent;
+    border-bottom:15px solid $white;
+    background:transparent;
+    margin:0 5px;
+  }
+  li.active{
+    border-bottom:15px solid $grey-9;
+    background:transparent;
+  }
+}
