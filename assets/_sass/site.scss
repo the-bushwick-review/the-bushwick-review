@@ -6,8 +6,8 @@ body{
   position:relative;
 }
 .fixed-hero{
-  background-image:url('../img/cover.jpg');
-  min-height:900px;
+  background-image:url('../img/cover-alt.jpg');
+  max-height:900px;
   background-attachment:fixed;
   background-position:center;
   background-repteat:no-repeat;
@@ -50,6 +50,14 @@ body{
       }
     }
   }
+}
+.issue-cover{
+  width: 40%;
+  position: relative;
+  z-index: 2000;
+  top: 100px;
+  left: 40%;
+  margin-left: -10%;
 }
 #issue-number{
   position:fixed;
