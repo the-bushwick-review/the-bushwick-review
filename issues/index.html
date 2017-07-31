@@ -12,7 +12,6 @@ layout: default
         {% if issue.buy-url != null %}
           <a href="{{ issue.buy-url }}"><img class="img-fluid margin-bottom-15" alt="Buy The Bushwick Review Issue {{ issue.number }}" title="Buy The Bushwick Review Issue {{ issue.number }}" src="{{ site.github.url }}/assets/img/{{ issue.img }}"  /></a>
           <a href="{{ issue.buy-url }}">{{ issue.name }} {{ issue.number }}<a/><br />
-
         {% else %}
           <img class="img-fluid margin-bottom-15" alt="The Bushwick Review Issue {{ issue.number }}" title="The Bushwick Review Issue {{ issue.number }}" src="{{ site.github.url }}/assets/img/{{ issue.img }}"  />
           {{ issue.name }} {{ issue.number }}<br />
@@ -22,12 +21,11 @@ layout: default
         {% endif %}
         <br />$ {{ issue.price }}<br />
         {% if issue.buy-url != null %}
-          <a class="btn btn-buy" href="{{ issue.buy-url }}"><i class="fa fa-diamond" aria-hidden="true"></i> Buy</a> <a class="btn btn-read" href="{{ issue.read-url }}"><i class="fa fa-file-o" aria-hidden="true"></i>
- Read</a><br />
+          <a class="btn btn-buy" href="{{ issue.buy-url }}"><i class="fa fa-diamond" aria-hidden="true"></i> Buy</a>
         {% elsif issue.sold-out == true %}
-          <a class="btn btn-soldout" disabled>Sold Out</a> <a class="btn btn-read" href="{{ issue.read-url }}"> <i class="fa fa-file-o" aria-hidden="true"></i>
-Read</a><br />
+          <a class="btn btn-soldout">Sold Out</a>
         {% endif %}
+        <a class="btn btn-read" href="{{ issue.read-url }}"> <i class="fa fa-file-o" aria-hidden="true"></i> Read</a><br />
 
       </div>
     {% endfor %}
