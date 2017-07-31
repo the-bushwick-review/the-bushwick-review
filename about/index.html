@@ -19,7 +19,7 @@ layout: default
       <div class="row">
         <h2>Stockists</h2>
         {% for stockist in site.data.stockists.stockists %}
-          <div class="col-md-12 margin-bottom-60 s-{{ stockist.id }}">
+          <div class="col-md-12 margin-bottom-30 s-{{ stockist.id }}">
             <a href="{{ stockist.url }}">{{ stockist.name }}</a><br />
             {{ stockist.address }}<br />
             {{ stockist.city }}, {{ stockist.state }}
@@ -31,7 +31,7 @@ layout: default
       <div class="row">
         <h2>Press</h2>
         {% for press-clip in site.data.press-clips.press-clips %}
-          <div class="col-md-12 margin-bottom-60 p-{{ press-clip.id }}">
+          <div class="col-md-12 margin-bottom-30 p-{{ press-clip.id }}">
             <a href="{{ press-clip.url }}">{{ press-clip.name }}</a><br />
             {{ press-clip.title }}<br />
             {{ press-clip.author }}<br />
