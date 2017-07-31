@@ -1,3 +1,4 @@
+// Body
 body{
   background:$white;
   @include sans-serif();
@@ -5,28 +6,27 @@ body{
   color:$body;
   position:relative;
 }
-.fixed-hero{
-  background-image:url('../img/cover-alt.jpg');
-  max-height:900px;
-  background-attachment:fixed;
-  background-position:center;
-  background-repteat:no-repeat;
-  background-size:cover;
-  margin-bottom:60px;
+p{
+  letter-spacing:0.01em;
+  line-height:32px;
+  color:$body-light;
 }
+//Navigation
 #logo{
-
   top:0;
   left:15px;
   z-index:999;
-}
-#navigation{
 
+  img{
+    width:100px;
+  }
+}
+.navigation{
   z-index:999;
   font-size:1em;
   line-height:auto;
   font-weight:400;
-  color:$white;
+  color:$body;
   text-align:center;
 
   ul{
@@ -34,30 +34,34 @@ body{
     margin:0;
     padding:0 7.5px;
 
-
     li{
       display:block;
-      border-top:1px solid $white;
+      border-top:1px solid $body;
       padding:10px 0;
       &:first-child{
         border:none;
         font-size:1em;
       }
       a{
-        color:$white;
+        color:$body;
         text-decoration:none;
         padding:0 7.5px;
       }
     }
   }
 }
-.issue-cover{
-  width: 40%;
-  position: relative;
-  z-index: 2000;
-  top: 100px;
-  left: 40%;
-  margin-left: -10%;
+// Index hero
+.fixed-hero{
+  background-image:url('../img/cover-alt.jpg');
+  background-attachment:fixed;
+  background-position:top center;
+  background-size:100% 500px;
+  background-repeat:no-repeat;
+  padding-bottom:60px;
+
+  .issue-cover{
+
+  }
 }
 #issue-number{
   position:fixed;
@@ -74,6 +78,7 @@ body{
   color:$white;
   font-size:4em;
 }
+// Content
 .featuring{
   text-align:center;
 
@@ -82,7 +87,6 @@ body{
     height:60px;
     margin:0 0 5px 0;
   }
-
   .col{
 
     ul{
@@ -101,21 +105,22 @@ body{
     text-transform:uppercase;
   }
 }
-// TEXT
-p{
-  letter-spacing:0.01em;
-  line-height:32px;
-  color:$body-light;
-}
-.lowercase{
-  text-transform:lowercase !important;
-}
 // Helpers
 .margin-bottom-15{margin-bottom:15px;}
 .margin-bottom-30{margin-bottom:30px;}
 .margin-bottom-60{margin-bottom:60px;}
 .margin-bottom-90{margin-bottom:90px;}
 .margin-bottom-120{margin-bottom:120px;}
+.lowercase{
+  text-transform:lowercase !important;
+}
+// Container wraps
+.container-wrap--peach{
+  width:100%;
+  height:100%;
+  background-color:$peach;
+  padding-top:60px;
+}
 
 // Bootstrap override
 ol.carousel-indicators{
@@ -133,5 +138,13 @@ ol.carousel-indicators{
   li.active{
     border-bottom:15px solid $grey-9;
     background:transparent;
+  }
+}
+.carousel-inner{
+  .carousel-item{
+    img{
+      width:100% !important;
+      height:auto !important;
+    }
   }
 }

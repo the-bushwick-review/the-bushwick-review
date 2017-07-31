@@ -1,22 +1,43 @@
-<div class="container">
+<div class="container-fluid">
   <div class="row align-items-center">
     <div id="logo" class="col-md-3">
       <a href="{{ site.github.url }}/">
         <img class="img-fluid" src="{{ site.github.url }}/assets/img/bushwick-review-logo.png" alt="The Bushwick Review" title="The Bushwick Review" />
       </a>
     </div>
-    <nav id="navigation" class="col-md-3 offset-md-6">
+    <nav class="navigation col-md-3 offset-md-6">
       <ul>
-        <li>&nbsp;<i class="fa fa-instagram" aria-hidden="true"></i></li>
-        <li><span class="float-left">ISSUE</span>&nbsp;<span class="float-right">NO. 7</li>
-        <li><span class="float-left">SUMMER</span>&nbsp;<span class="float-right">2017</li>
         <li>
-          <a id="nav-shop" href="http://thebushwickreview.bigcartel.com/">Shop</a>
-          <a id="nav-issues" href="{{ site.github.url }}/issues">Issues</a>
-          <a id="nav-news" href="{{ site.github.url }}/news">News</a>
-          <a id="nav-about" href="{{ site.github.url }}/about">About</a>
+          <a href=""><i class="fa fa-instagram float-left" aria-hidden="true"></i></a>
+          <a href="#" class="float-right" data-toggle="modal" data-target="#navModal">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </a>
+          &nbsp;
         </li>
+        <li>ISSUE NO. 7</li>
+        <li>SUMMER 2017</li>
+
       </ul>
     </nav>
+
+
+    <div class="modal" id="navModal" tabindex="-1" role="dialog" aria-labelledby="NavigationModal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <ul>
+              <li><a id="nav-shop" href="http://thebushwickreview.bigcartel.com/">Shop</a></li>
+              <li><a id="nav-issues" href="{{ site.github.url }}/issues">Issues</a></li>
+              <li><a id="nav-news" href="{{ site.github.url }}/news">News</a></li>
+              <li><a id="nav-about" href="{{ site.github.url }}/about">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
