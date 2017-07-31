@@ -50,6 +50,43 @@ p{
     }
   }
 }
+#navModal{
+  background:$peach-transparent;
+
+  .modal-dialog{
+
+    .modal-content{
+      background:transparent;
+      border:0;
+
+      ul{
+        list-style:none;
+        margin:0;
+        padding:0;
+        font-size:6em;
+        font-weight:800;
+        text-align:center;
+
+        li{
+
+          a{
+            color:$white;
+            &:hover,&:active{
+
+            }
+          }
+        }
+      }
+    }
+  }
+  .navClose{
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color:$white;
+    opacity:1;
+  }
+}
 // Index hero
 .fixed-hero{
   background-image:url('../img/cover-alt.jpg');
@@ -106,17 +143,53 @@ p{
   }
 }
 // Issues Index
-.sold-out{
-  position:relative;
-  -ms-transform: rotate(2deg); /* IE 9 */
-  -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
-  transform: rotate(2deg);
-  transform-origin: 100% 0;
-  color:$white;
-  background:$red;
-  padding:2px 3px;
+.issue{
+
+  small{
+    color:$grey-9;
+  }
+}
+@mixin btn-standard($btn-text, $btn-background, $btn-border, $btn-text-hover, $btn-background-hover, $btn-border-hover, $icon-opacity, $icon-opacity-hover){
+      color:$btn-text;
+      background-color:$btn-background;
+      border:2px solid $btn-border;
+      letter-spacing:0.04em;
+      font-weight:600;
+      padding:6px 24px;
+      margin:0 12px 12px 0;
+      @include border-radius(4px);
+      @include transition(all ease-in-out 0.1s);
+      @include box-shadow(0 0 0 0 !important);
+      &:active, &:hover, &:focus{
+        color:$btn-text-hover;
+        background-color:$btn-background-hover;
+        border:2px solid $btn-border-hover;
+        i.fa{
+          color:$btn-text-hover;
+          opacity:$icon-opacity-hover;
+        }
+      }
+      &:focus{
+        outline:1px dotted $peach;
+      }
+      i.fa{
+        margin-right:5px;
+        color:$btn-text;
+        opacity:$icon-opacity;
+      }
+    }
+.btn-buy{
+  @include btn-standard($blue, $white, $blue, $white, $blue, $blue, 0.75, 1);
+}
+.btn-soldout{
+  @include btn-standard($blue-light, $white, $blue-light, $white, $blue-light, $blue-light, 0.5, 1);
+}
+.btn-read{
+  @include btn-standard($blue, $white, $blue, $white, $blue, $blue, 0.75, 1);
 }
 // Helpers
+.margin-bottom-5{margin-bottom:5px;}
+.margin-bottom-10{margin-bottom:10px;}
 .margin-bottom-15{margin-bottom:15px;}
 .margin-bottom-30{margin-bottom:30px;}
 .margin-bottom-60{margin-bottom:60px;}
