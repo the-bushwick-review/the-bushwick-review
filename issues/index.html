@@ -7,7 +7,13 @@ layout: default
     {% for issue in site.data.issues.issues %}
       <div class="col-md-4">
         <img class="img-fluid" src="{{ issue.img }}"  />
-        {{ issue.id }} | {{ issue.name }} | {{ issue.number }} | {{ issue.description }} | {{ issue.buy-url }} | {{ issue.read-url }} | {{ issue.price }} | {{ issue.sold-out }}
+        {{ issue.id }}<br />
+        {{ issue.name }} {{ issue.number }}<br />
+        {{ issue.description }}<br />
+        <a href="{{ issue.buy-url }}">Buy</a><br />
+        <a href="{{ issue.read-url }}">Read</a><br />
+        {{ issue.price }}<br />
+        {{ issue.sold-out }}
       </div>
     {% endfor %}
 

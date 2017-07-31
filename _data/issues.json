@@ -4,9 +4,9 @@
     "id":"001",
     "name":"The Bushwick Review",
     "number":"I",
-    "description":"",
+    "description":,
     "img":"http://3.bp.blogspot.com/__9PCmBrOEMA/TAe7QYp4djI/AAAAAAAAB6s/Z6hzbB5WCE4/s1600/robocop.jpg",
-    "buy-url":"",
+    "buy-url":,
     "read-url":"https://issuu.com/thebushwickreview/docs/i",
     "price":"5.00",
     "sold-out": true
@@ -15,9 +15,9 @@
     "id":"002",
     "name":"The Bushwick Review",
     "number":"II",
-    "description":"",
+    "description":,
     "img":"http://3.bp.blogspot.com/__9PCmBrOEMA/TAe7QYp4djI/AAAAAAAAB6s/Z6hzbB5WCE4/s1600/robocop.jpg",
-    "buy-url":"",
+    "buy-url":,
     "read-url":"https://issuu.com/thebushwickreview/docs/ii",
     "price":"5.00",
     "sold-out": true
@@ -28,7 +28,7 @@
     "number":"III",
     "description":"Color cover, 74 b&amp;w pages, saddle-stitched.",
     "img":"http://3.bp.blogspot.com/__9PCmBrOEMA/TAe7QYp4djI/AAAAAAAAB6s/Z6hzbB5WCE4/s1600/robocop.jpg",
-    "buy-url":"",
+    "buy-url":"http://thebushwickreview.bigcartel.com/product/the-bushwick-review-iii",
     "read-url":"https://issuu.com/thebushwickreview/docs/iii",
     "price":"5.00",
     "sold-out":
@@ -48,10 +48,10 @@
     "id":"005",
     "name":"The Bushwick Review",
     "number":"V",
-    "description":"",
+    "description":,
     "img":"http://3.bp.blogspot.com/__9PCmBrOEMA/TAe7QYp4djI/AAAAAAAAB6s/Z6hzbB5WCE4/s1600/robocop.jpg",
     "buy-url":"https://issuu.com/thebushwickreview/docs/v",
-    "read-url":"",
+    "read-url":,
     "price":"5.00",
     "sold-out": true
     },
@@ -73,7 +73,7 @@
     "description":"Color cover, 60 b&amp;w pages, perfect bound.",
     "img":"http://3.bp.blogspot.com/__9PCmBrOEMA/TAe7QYp4djI/AAAAAAAAB6s/Z6hzbB5WCE4/s1600/robocop.jpg",
     "buy-url":"http://thebushwickreview.bigcartel.com/product/the-bushwick-review-vii",
-    "read-url":"",
+    "read-url":,
     "price":"8.00",
     "sold-out":
     }
