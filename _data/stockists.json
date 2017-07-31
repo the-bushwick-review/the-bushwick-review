@@ -1,0 +1,44 @@
+{
+  "stockists":[
+    {
+    "id":"004",
+    "name":"Molasses Books",
+    "address":"770 Hart St",
+    "city":"Brooklyn",
+    "state":"NY",
+    "zip":,
+    "description":,
+    "url":"https://www.facebook.com/MolassesBooks/"
+    },
+    {
+    "id":"003",
+    "name":"Tiny Hero at Little Skips",
+    "address":"941 Willoughby Ave",
+    "city":"Brooklyn",
+    "state":"NY",
+    "zip":,
+    "description":,
+    "url":"http://littleskips.nyc/"
+    },
+    {
+    "id":"002",
+    "name":"Quimby's NYC",
+    "address":"536 Metropolitan Ave",
+    "city":"Brooklyn",
+    "state":"NY",
+    "zip":,
+    "description":,
+    "url":"https://www.facebook.com/quimbysnyc/"
+    },
+    {
+    "id":"001",
+    "name":"Quimby's Chicago",
+    "address":"1854 W. North Ave",
+    "city":"Chicago",
+    "state":"IL",
+    "zip":,
+    "description":,
+    "url":"http://www.quimbys.com/"
+    }
+  ]
+}
