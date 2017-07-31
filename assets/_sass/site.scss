@@ -178,14 +178,13 @@ p{
         opacity:$icon-opacity;
       }
     }
-.btn-buy{
+.btn-buy, .btn-read{
   @include btn-standard($blue, $white, $blue, $white, $blue, $blue, 0.75, 1);
 }
 .btn-soldout{
-  @include btn-standard($grey-9, $white, $grey-9, $white, $grey-9, $grey-9, 0.75, 1);
-}
-.btn-read{
-  @include btn-standard($blue, $white, $blue, $white, $blue, $blue, 0.75, 1);
+  @include btn-standard($grey-9, $white, $grey-9, $grey-9, $white, $grey-9, 0.75, 1);
+  cursor:default;
+  color:$grey-9 !important;
 }
 // Helpers
 .margin-bottom-5{margin-bottom:5px;}
@@ -230,6 +229,7 @@ ol.carousel-indicators{
 }
 // Footer
 footer{
+  padding:0 0 60px 0;
 
   ul{
     list-style:none;
