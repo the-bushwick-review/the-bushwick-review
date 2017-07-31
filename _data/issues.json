@@ -9,7 +9,11 @@
     "buy-url":"http://thebushwickreview.bigcartel.com/product/the-bushwick-review-vii",
     "read-url":,
     "price":"8.00",
-    "sold-out":
+    "sold-out":,
+    "month":"07",
+    "day":"30",
+    "year":"2017",
+    "contributors":
     },
     {
     "id":"006",
@@ -20,7 +24,11 @@
     "buy-url":"http://thebushwickreview.bigcartel.com/product/the-bushwick-review-vi",
     "read-url":"https://issuu.com/thebushwickreview/docs/vi",
     "price":"5.00",
-    "sold-out":
+    "sold-out":,
+    "month":"07",
+    "day":"14",
+    "year":"2015",
+    "contributors":
     },
     {
     "id":"005",
@@ -31,7 +39,11 @@
     "buy-url":,
     "read-url":"https://issuu.com/thebushwickreview/docs/v",
     "price":"5.00",
-    "sold-out": true
+    "sold-out": true,
+    "month":"05",
+    "day":"16",
+    "year":"2014",
+    "contributors":
     },
     {
     "id":"004",
@@ -42,7 +54,11 @@
     "buy-url":"http://thebushwickreview.bigcartel.com/product/the-bushwick-review-iv",
     "read-url":"https://issuu.com/thebushwickreview/docs/iv",
     "price":"5.00",
-    "sold-out":
+    "sold-out":,
+    "month":"06",
+    "day":"13",
+    "year":"2013",
+    "contributors":
     },
     {
     "id":"003",
@@ -53,7 +69,11 @@
     "buy-url":"http://thebushwickreview.bigcartel.com/product/the-bushwick-review-iii",
     "read-url":"https://issuu.com/thebushwickreview/docs/iii",
     "price":"5.00",
-    "sold-out":
+    "sold-out":,
+    "month":,
+    "day":,
+    "year":,
+    "contributors":
     },
     {
     "id":"002",
@@ -64,7 +84,11 @@
     "buy-url":,
     "read-url":"https://issuu.com/thebushwickreview/docs/ii",
     "price":"5.00",
-    "sold-out": true
+    "sold-out": true,
+    "month":"03",
+    "day":"03",
+    "year":"2011",
+    "contributors":
     },
     {
     "id":"001",
@@ -75,7 +99,11 @@
     "buy-url":,
     "read-url":"https://issuu.com/thebushwickreview/docs/i",
     "price":"5.00",
-    "sold-out": true
+    "sold-out": true,
+    "month":"12",
+    "day":"05",
+    "year":"2009",
+    "contributors":"Leigh Alexander, Mary Anne Broccolo, Kenton Deangeli, Bill Dvorak, Clayton M. Eddy, Zachary Feldman, Kristen Felicetti, Laura Turner Garrison, Dave Hannon, Crystal Heller, Shawn Patrick Higgins, Lydia Nichols, Megan Robb, Michele Rosenthal, Nick Smarcz, Thom Smith, Tim Vienckowski, Julia Wilson, Clara Yoo"
     }
   ]
 }

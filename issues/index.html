@@ -23,7 +23,7 @@ layout: default
         {% if issue.buy-url != null %}
           <a class="btn btn-buy" href="{{ issue.buy-url }}"><i class="fa fa-diamond" aria-hidden="true"></i> Buy</a>
         {% elsif issue.sold-out == true %}
-          <a class="btn btn-soldout">Sold Out</a>
+          <a class="btn btn-soldout"><i class="fa fa-meh-o" aria-hidden="true"></i> Sold Out</a>
         {% endif %}
         <a class="btn btn-read" href="{{ issue.read-url }}"> <i class="fa fa-file-o" aria-hidden="true"></i> Read</a><br />
 
