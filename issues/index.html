@@ -5,15 +5,23 @@ layout: default
 <div class="container">
   <div class="row">
     {% for issue in site.data.issues.issues %}
-      <div class="col-md-4">
-        <img class="img-fluid" src="{{ issue.img }}"  />
-        {{ issue.id }}<br />
-        {{ issue.name }} {{ issue.number }}<br />
-        {{ issue.description }}<br />
-        <a href="{{ issue.buy-url }}">Buy</a><br />
+      <div class="col-md-4 margin-bottom-60 issue-{{ issue.id }}">
+        {% if issue.buy-url != null %}
+          <a href="{{ issue.buy-url }}"><img class="img-fluid" src="{{ site.github.url }}/assets/img/{{ issue.img }}"  /></a>
+          <a href="{{ issue.buy-url }}">{{ issue.name }} {{ issue.number }}<a/><br />
+        {% else %}
+          <img class="img-fluid" src="{{ site.github.url }}/assets/img/{{ issue.img }}"  />
+          {{ issue.name }} {{ issue.number }}<br />
+        {% endif %}
+        {% if issue.buy-url != null %}
+          <a href="{{ issue.buy-url }}">Buy</a> {{ issue.price }}<br />
+        {% elsif issue.sold-out == true %}
+          <del>Buy {{ issue.price }}</del> <span class="sold-out">Sold Out</span><br />
+        {% endif %}
         <a href="{{ issue.read-url }}">Read</a><br />
-        {{ issue.price }}<br />
-        {{ issue.sold-out }}
+        {% if issue.description != null %}
+          <small>{{ issue.description }}</small>
+        {% endif %}
       </div>
     {% endfor %}
 

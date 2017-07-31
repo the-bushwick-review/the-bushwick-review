@@ -105,6 +105,17 @@ p{
     text-transform:uppercase;
   }
 }
+// Issues Index
+.sold-out{
+  position:relative;
+  -ms-transform: rotate(2deg); /* IE 9 */
+  -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+  transform: rotate(2deg);
+  transform-origin: 100% 0;
+  color:$white;
+  background:$red;
+  padding:2px 3px;
+}
 // Helpers
 .margin-bottom-15{margin-bottom:15px;}
 .margin-bottom-30{margin-bottom:30px;}
@@ -121,23 +132,19 @@ p{
   background-color:$peach;
   padding-top:60px;
 }
-
-// Bootstrap override
+// Issue carousel
 ol.carousel-indicators{
-  bottom:30px;
 
   li{
-    width:0;
-    height:0;
-    border-left:15px solid transparent;
-    border-right:15px solid transparent;
-    border-bottom:15px solid $white;
+    width:20px;
+    height:20px;
+    border:10px solid $white;
+    @include border-radius(10px);
     background:transparent;
     margin:0 5px;
   }
   li.active{
-    border-bottom:15px solid $grey-9;
-    background:transparent;
+    background:$white;
   }
 }
 .carousel-inner{
@@ -148,3 +155,4 @@ ol.carousel-indicators{
     }
   }
 }
+// Bootstrap override
