@@ -9,6 +9,7 @@
   <meta name="description" content="The Bushwick Review is ..." />
 
   <meta property="og:site_name" content="The Bushwick Review">
+  <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   {% if page.metadata %}
     <meta property="og:url" content="http://thebushwickreview.com{{ page.url }}" />
@@ -23,17 +24,18 @@
     <meta itemprop="description" content="{{ page.og-description }}">
     <meta itemprop="image" content="{{ page.og-image }}">
   {% else %}
-    <meta property="og:url" content="http://thebushwickreview.com" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="The Bushwick Review" />
-    <meta property="og:description" content="The Bushwick Review is ..." />
-    <meta property="og:image" content="http://www.imageurlhere.com" />
-    <meta name="twitter:title" content="The Bushwick Review">
-    <meta name="twitter:description" content="The Bushwick Review is ...">
-    <meta name="twitter:image" content="http://www.imageurlhere.com">
-    <meta itemprop="name" content="The Bushwick Review">
-    <meta itemprop="description" content="The Bushwick Review is ...">
-    <meta itemprop="image" content="http://www.imageurlhere.com">
+    {% for share in site.data.shares.shares %}
+      <meta property="og:url" content="{{ share.url }}" />
+      <meta property="og:title" content="{{ share.name }}" />
+      <meta property="og:description" content="{{ share.description }}" />
+      <meta property="og:image" content="{{ share.img }}" />
+      <meta name="twitter:title" content="{{ share.name }}">
+      <meta name="twitter:description" content="{{ share.description }}">
+      <meta name="twitter:image" content="{{ share.img }}">
+      <meta itemprop="name" content="{{ share.name }}">
+      <meta itemprop="description" content="{{ share.description }}">
+      <meta itemprop="image" content="{{ share.img }}">
+    {% endfor %}
   {% endif %}
 
   <link rel="shortcut icon" type="image/x-icon" href="{{ site.github.url }}/favicon.ico?">
