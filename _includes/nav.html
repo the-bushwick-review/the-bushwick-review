@@ -1,6 +1,6 @@
 <div class="container">
   <nav class="row mb-4 pt-4 navigation">
-    <div id="logo" class="col-md-4">
+    <div id="logo" class="col-md-4 mb-3">
       <a href="{{ site.github.url }}/">
         <img class="img-fluid" src="{{ site.github.url }}/assets/img/bushwick-review-logo.png" alt="The Bushwick Review" title="The Bushwick Review" />
       </a>
@@ -9,20 +9,20 @@
       <ul>
         <li>
           <span class="pull-left">ISSUE NO. 7</span>
-          <a href="" class="pull-right"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/bushwickreview/" class="pull-right" title="Follow The Bushwick Review on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
           <span class="clearfix"></span>
         </li>
-        <li><span class="">SUMMER 2017</span></li>
+        <li>SUMMER 2017</li>
       </ul>
     </div>
     <div class="col-md-4 ">
-      <a class="nav-item" id="nav-issues" href="{{ site.github.url }}/issues">Issues</a>
+      <a class="nav-item {% if page.nav == 'issues' %}active{% endif %}" id="nav-issues" href="{{ site.github.url }}/issues">Issues</a>
     </div>
     <div class="col-md-4">
-      <a class="nav-item" id="nav-shop" href="http://thebushwickreview.bigcartel.com/">Shop</a>
+      <a class="nav-item {% if page.nav == 'shop' %}active{% endif %}" id="nav-shop" href="http://thebushwickreview.bigcartel.com/">Shop</a>
     </div>
     <div class="col-md-4">
-      <a class="nav-item" id="nav-about" href="{{ site.github.url }}/about">About</a>
+      <a class="nav-item {% if page.nav == 'about' %}active{% endif %}" id="nav-about" href="{{ site.github.url }}/about">About</a>
     </div>
   </nav>
 </div>

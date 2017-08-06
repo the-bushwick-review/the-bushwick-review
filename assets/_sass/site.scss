@@ -34,6 +34,16 @@ p{
     display:inline-block;
     &:hover{
       text-decoration:none;
+      color:$blue;
+      border-color:$blue;
+    }
+  }
+  .nav-item.active{
+    color:$blue;
+    border-color:$blue;
+    &:hover{
+      color:$body;
+      border-color:$body;
     }
   }
 
@@ -45,10 +55,11 @@ p{
 
     li{
       display:block;
-      border-top:2px solid $body;
-      padding:10px 0;
+      border-top:2px solid $grey-9;
+      padding:7.5px 0;
+      color:$grey-9;
       a{
-        color:$body;
+        color:$grey-9;
         text-decoration:none;
       }
     }
