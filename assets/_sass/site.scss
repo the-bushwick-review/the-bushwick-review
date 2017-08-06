@@ -20,7 +20,6 @@ p{
 .navigation{
 
   line-height:auto;
-
   color:$body;
   text-align:left;
 
@@ -55,51 +54,17 @@ p{
 
     li{
       display:block;
-      border-top:2px solid $grey-9;
+      border-top:2px solid $body;
       padding:7.5px 0;
-      color:$grey-9;
+      color:$body;
       a{
-        color:$grey-9;
+        color:$body;
         text-decoration:none;
-      }
-    }
-  }
-}
-#navModal{
-  background:$peach-transparent;
-
-  .modal-dialog{
-
-    .modal-content{
-      background:transparent;
-      border:0;
-
-      ul{
-        list-style:none;
-        margin:0;
-        padding:0;
-        font-size:6em;
-        font-weight:800;
-        text-align:center;
-
-        li{
-
-          a{
-            color:$white;
-            &:hover,&:active{
-
-            }
-          }
+        &:hover{
+          color:$blue;
         }
       }
     }
-  }
-  .navClose{
-    position: absolute;
-    top: 15px;
-    right: 25px;
-    color:$white;
-    opacity:1;
   }
 }
 // Index hero
