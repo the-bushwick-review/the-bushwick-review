@@ -1,5 +1,5 @@
 {
-  "_comment":"JSON for repeating share/meta info in the page head.",
+  "_comment":"JSON for repeating generalized share/meta info in the page head.",
   "shares":[
     {
     "url":"http://www.thebushwickreview.com",
