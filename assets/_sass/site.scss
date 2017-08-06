@@ -11,10 +11,38 @@ p{
   line-height:32px;
   color:$body-light;
 }
-//Navigation
+h1{
+  font-weight:800;
+}
+h2{
+  font-weight:800;
+}
+// Linx
+
+  a{
+    color:$blue;
+    border:none;
+    text-decoration:none;
+    border-bottom:2px solid transparent;
+    &:hover{
+      color:$blue;
+      border-bottom:2px solid $blue;
+      padding-bottom:1px;
+      text-decoration:none;
+    }
+  }
+// Navigation
 #logo{
   img{
     width:100px;
+  }
+  a{
+    border:none !important;
+    text-decoration:none;
+    &:hover{
+      border:none !important;
+      text-decoration:none;
+    }
   }
 }
 .navigation{
@@ -29,17 +57,22 @@ p{
     color:$body;
     text-decoration: none;
     border-top:2px solid $body;
+    border-bottom:0 !important;
+    padding-bottom:0 !important;
     width:100%;
     display:inline-block;
     &:hover{
       text-decoration:none;
       color:$blue;
       border-color:$blue;
+      border-bottom:0 !important;
+      padding-bottom:0 !important;
     }
   }
   .nav-item.active{
     color:$blue;
     border-color:$blue;
+
     &:hover{
       color:$body;
       border-color:$body;
@@ -60,8 +93,12 @@ p{
       a{
         color:$body;
         text-decoration:none;
+        border:none !important;
+        padding-bottom:0;
         &:hover{
           color:$blue;
+          border:none !important;
+          padding-bottom:0;
         }
       }
     }
@@ -165,6 +202,11 @@ p{
   @include btn-standard($grey-9, $white, $grey-9, $grey-9, $white, $grey-9, 0.75, 1);
   cursor:default;
   color:$grey-9 !important;
+}
+// About index
+.stockist{
+  padding:15px;
+  background:$rose;
 }
 // Helpers
 .margin-bottom-5{margin-bottom:5px;}
