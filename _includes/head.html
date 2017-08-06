@@ -5,6 +5,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name=viewport content="width=device-width, initial-scale=1">
 
+  <title>
+    {% if page.title %}{{ page.title }} &mdash; {% endif %}The Bushwick Review
+
+  </title>
+  <meta name="description" content="The Bushwick Review is ..." />
+
   <meta property="og:site_name" content="The Bushwick Review">
   <meta name="twitter:card" content="summary_large_image" />
   {% if page.metadata %}
@@ -24,12 +30,10 @@
     <meta property="og:image" content="http://www.imageurlhere.com" />
     <meta name="twitter:title" content="The Bushwick Review">
     <meta name="twitter:description" content="The Bushwick Review is ...">
-    <meta name="twitter:image" content="http://www.imageurlhere.com">  
+    <meta name="twitter:image" content="http://www.imageurlhere.com">
   {% endif %}
 
   <link rel="shortcut icon" type="image/x-icon" href="{{ site.github.url }}/favicon.ico?">
-
-  <title>{% if page.title %}{{ page.title }} &mdash; {% endif %} The Bushwick Review</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
