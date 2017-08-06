@@ -13,39 +13,43 @@ p{
 }
 //Navigation
 #logo{
-  top:0;
-  left:15px;
-  z-index:999;
-
   img{
     width:100px;
   }
 }
 .navigation{
-  z-index:999;
-  font-size:1em;
+
   line-height:auto;
-  font-weight:400;
+
   color:$body;
-  text-align:center;
+  text-align:left;
+
+  .nav-item{
+    font-size:2em;
+    font-weight:800;
+    color:$body;
+    text-decoration: none;
+    border-top:2px solid $body;
+    width:100%;
+    display:inline-block;
+    &:hover{
+      text-decoration:none;
+    }
+  }
 
   ul{
     list-style:none;
     margin:0;
-    padding:0 7.5px;
+    padding:0;
+    font-size:1em !important;
 
     li{
       display:block;
-      border-top:1px solid $body;
+      border-top:2px solid $body;
       padding:10px 0;
-      &:first-child{
-        border:none;
-        font-size:1em;
-      }
       a{
         color:$body;
         text-decoration:none;
-        padding:0 15px 0 0;
       }
     }
   }

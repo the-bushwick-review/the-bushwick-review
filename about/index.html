@@ -4,7 +4,7 @@ layout: default
 {% include nav.html %}
 <div class="container">
   <div class="row">
-    <div class="col-md-6 offset-md-3">
+    <div class="col-md-8 offset-md-2">
       <h1>ABOUT | WHO DAT</h1>
       <p>The Bushwick Review is a literary and art magazine that features over 20 contributors each issue. Over the years, we've featured short stories, essays, poetry, photography, paintings, drawings, architecture, plays, comics (basically anything that can be printed on a black and white page). The current issue is always only available in print.</p>
       <p>Our home base is Brooklyn, but our contributors live all over the world. We've been around for a few years and multiple issues, but we are interested in making art and writing that speaks to being alive in 2017.</p>
@@ -15,9 +15,11 @@ layout: default
         <a href="mailto:bushwickreview@gmail.com">bushwickreview@gmail.com</a>
       </p>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-4">
       <div class="row">
-        <h2>Stockists</h2>
+        <div class="col-md-12">
+          <h2>Stockists</h2>
+        </div>
         {% for stockist in site.data.stockists.stockists %}
           <div class="col-md-12 margin-bottom-30 s-{{ stockist.id }}">
             <a href="{{ stockist.url }}">{{ stockist.name }}</a><br />
@@ -27,9 +29,11 @@ layout: default
         {% endfor %}
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-4 offset-md-4">
       <div class="row">
-        <h2>Press</h2>
+        <div class="col-md-12">
+          <h2>Press</h2>
+        </div>
         {% for press-clip in site.data.press-clips.press-clips %}
           <div class="col-md-12 margin-bottom-30 p-{{ press-clip.id }}">
             <a href="{{ press-clip.url }}">{{ press-clip.name }}</a><br />
