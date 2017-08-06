@@ -130,34 +130,34 @@ p{
   }
 }
 @mixin btn-standard($btn-text, $btn-background, $btn-border, $btn-text-hover, $btn-background-hover, $btn-border-hover, $icon-opacity, $icon-opacity-hover){
-      color:$btn-text;
-      background-color:$btn-background;
-      border:2px solid $btn-border;
-      letter-spacing:0.04em;
-      font-weight:600;
-      padding:6px 24px;
-      margin:0 12px 12px 0;
-      @include border-radius(4px);
-      @include transition(all ease-in-out 0.1s);
-      @include box-shadow(0 0 0 0 !important);
-      &:active, &:hover, &:focus{
-        color:$btn-text-hover;
-        background-color:$btn-background-hover;
-        border:2px solid $btn-border-hover;
-        i.fa{
-          color:$btn-text-hover;
-          opacity:$icon-opacity-hover;
-        }
-      }
-      &:focus{
-        outline:1px dotted $peach;
-      }
-      i.fa{
-        margin-right:5px;
-        color:$btn-text;
-        opacity:$icon-opacity;
-      }
+  color:$btn-text;
+  background-color:$btn-background;
+  border:2px solid $btn-border;
+  letter-spacing:0.04em;
+  font-weight:600;
+  padding:6px 24px;
+  margin:0 12px 12px 0;
+  @include border-radius(4px);
+  @include transition(all ease-in-out 0.1s);
+  @include box-shadow(0 0 0 0 !important);
+  &:active, &:hover, &:focus{
+    color:$btn-text-hover;
+    background-color:$btn-background-hover;
+    border:2px solid $btn-border-hover;
+    i.fa{
+      color:$btn-text-hover;
+      opacity:$icon-opacity-hover;
     }
+  }
+  &:focus{
+    outline:1px dotted $peach;
+  }
+  i.fa{
+    margin-right:5px;
+    color:$btn-text;
+    opacity:$icon-opacity;
+  }
+}
 .btn-buy, .btn-read{
   @include btn-standard($blue, $white, $blue, $white, $blue, $blue, 0.75, 1);
 }
@@ -209,7 +209,36 @@ ol.carousel-indicators{
 }
 // Footer
 footer{
-  padding:0 0 60px 0;
+
+  a{
+    color:$body;
+    text-decoration:none;
+    &:hover{
+      text-decoration:none;
+      color:$blue;
+    }
+  }
+
+  .nav-item{
+    font-size:1em;
+    font-weight:400;
+    margin-right:15px;
+    color:$body;
+    border-bottom:none;
+    text-decoration:none;
+    &:hover{
+      color:$blue;
+      border:none;
+      text-decoration:none;
+    }
+  }
+  .nav-item.active{
+    color:$blue;
+    &:hover{
+      color:$body;
+      border-color:$body;
+    }
+  }
 
   ul{
     list-style:none;

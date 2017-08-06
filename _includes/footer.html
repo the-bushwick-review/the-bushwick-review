@@ -1,16 +1,18 @@
 <footer>
   <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <ul>
-          <li class="pull-left">The Bushwick Review | ISSUE NO. 7 | SUMMER 2017</li>
-          <li class="pull-right">
-            <a id="nav-shop-footer" href="http://thebushwickreview.bigcartel.com/">Shop</a>
-            <a id="nav-issues-footer" href="{{ site.github.url }}/issues">Issues</a>
-            <a id="nav-about-footer" href="{{ site.github.url }}/about">About</a>
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-          </li>
-        </ul>
+    <div class="row mt-4 pt-4 mb-4 pb-4">
+      <div class="col-4">
+        The Bushwick Review<br />
+        <small class="text-grey-9">&copy; 2009 - {{ 'now' | date: "%Y" }}</small>
+      </div>
+      <div class="col-4">
+        <span class="text-grey-9">Issue No. 7 &bull; Summer 2017</span>
+      </div>
+      <div class="col-4">
+        <a class="nav-item {% if page.nav == 'shop' %}active{% endif %}" href="http://thebushwickreview.bigcartel.com/">Shop</a>
+          <a class="nav-item {% if page.nav == 'issues' %}active{% endif %}" href="{{ site.github.url }}/issues">Issues</a>
+        <a class="nav-item {% if page.nav == 'about' %}active{% endif %}" href="{{ site.github.url }}/about">About</a>
+        <a href="https://www.instagram.com/bushwickreview/" class="pull-right" title="Follow The Bushwick Review on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
       </div>
     </div>
   </div>
