@@ -19,6 +19,9 @@
     <meta name="twitter:title" content="{{ page.og-title }}">
     <meta name="twitter:description" content="{{ page.og-description }}">
     <meta name="twitter:image" content="{{ page.og-image }}">
+    <meta itemprop="name" content="{{ page.og-title }}">
+    <meta itemprop="description" content="{{ page.og-description }}">
+    <meta itemprop="image" content="{{ page.og-image }}">
   {% else %}
     <meta property="og:url" content="http://thebushwickreview.com" />
     <meta property="og:type" content="website" />
@@ -28,6 +31,9 @@
     <meta name="twitter:title" content="The Bushwick Review">
     <meta name="twitter:description" content="The Bushwick Review is ...">
     <meta name="twitter:image" content="http://www.imageurlhere.com">
+    <meta itemprop="name" content="The Bushwick Review">
+    <meta itemprop="description" content="The Bushwick Review is ...">
+    <meta itemprop="image" content="http://www.imageurlhere.com">
   {% endif %}
 
   <link rel="shortcut icon" type="image/x-icon" href="{{ site.github.url }}/favicon.ico?">
