@@ -82,11 +82,6 @@ h2{
   .nav-item.active{
     color:$blue;
     border-color:$blue;
-
-    &:hover{
-      color:$body;
-      border-color:$body;
-    }
   }
 
   ul{
@@ -240,6 +235,7 @@ h2{
 ol.carousel-indicators{
   position:inherit;
   bottom:0;
+  margin:0 5px;
 
   li{
     width:20px;
@@ -314,10 +310,6 @@ footer{
   }
   .nav-item.active{
     color:$blue;
-    &:hover{
-      color:$body;
-      border-color:$body;
-    }
   }
 
   ul{
