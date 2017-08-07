@@ -304,3 +304,8 @@ footer{
   }
 }
 // Bootstrap override
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
