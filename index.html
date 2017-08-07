@@ -5,12 +5,16 @@ layout: default
   {% include nav.html %}
   <div class="container">
     <div class="row">
-      <div class="col-md-4 offset-md-4">
+      <div class="col-md-6">
         <img class="issue-cover img-fluid" src="{{ site.github.url }}/assets/img/issue-7-cover.jpg" />
       </div>
+
+
+        {% include contributors.html %}
+  
+
     </div>
   </div>
 </div>
 
 {% include issue-carousel.html %}
-{% include contributors.html %}
