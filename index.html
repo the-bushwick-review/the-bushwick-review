@@ -5,16 +5,18 @@ layout: default
   {% include nav.html %}
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <img class="issue-cover img-fluid" src="{{ site.github.url }}/assets/img/issue-7-cover.jpg" />
+      <div class="col-md-5 offset-md-1">
+        <img class="issue-cover img-fluid my-4" src="{{ site.github.url }}/assets/img/issue-7-cover.jpg" />
+        <div class="row mt-4">
+          <div class="col-md-8 offset-md-2 text-center">
+            <h2 class="d-block mb-4">$8.00</h2>
+            <a href="" class="btn btn-buy btn-l rotate-06"><i class="fa fa-diamond" aria-hidden="true"></i>Buy Now!</a>
+          </div>
+        </div>
+
       </div>
-
-
-        {% include contributors.html %}
-  
-
+      {% include contributors.html %}
     </div>
   </div>
 </div>
-
 {% include issue-carousel.html %}

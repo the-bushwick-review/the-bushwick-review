@@ -118,9 +118,11 @@ h2{
   background-repeat:no-repeat;
   padding-bottom:60px;
 
-  .issue-cover{
 
-  }
+}
+.issue-cover{
+    @include transform(translateZ(1px) rotate(-4deg));
+    @include box-shadow(-10px 10px 0px $blue);
 }
 #issue-number{
   position:fixed;
@@ -186,6 +188,7 @@ h2{
     color:$btn-text-hover;
     background-color:$btn-background-hover;
     border:2px solid $btn-border-hover;
+    padding:6px 24px;
     i.fa{
       color:$btn-text-hover;
       opacity:$icon-opacity-hover;
@@ -208,6 +211,16 @@ h2{
   cursor:default;
   color:$grey-9 !important;
 }
+.btn-l{
+  font-size:1.5em;
+  padding:15px 30px;
+  &:active, &:hover, &:focus{
+    padding:15px 30px;
+  }
+  i.fa{
+    margin-right:15px;
+  }
+}
 // About index
 .stockist{
   padding:15px;
@@ -223,6 +236,9 @@ h2{
 .margin-bottom-120{margin-bottom:120px;}
 .lowercase{
   text-transform:lowercase !important;
+}
+.rotate-06{
+  @include transform(rotate(6deg));
 }
 // Container wraps
 .container-wrap--peach{
