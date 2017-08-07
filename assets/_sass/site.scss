@@ -69,6 +69,16 @@ h2{
       padding-bottom:0 !important;
     }
   }
+  #nav-shop{
+    &:hover:after{
+      font-family:"FontAwesome";
+      content:"\f14c";
+      font-size:0.6em !important;
+      position:absolute;
+      top:15px;
+      right:15px;
+    }
+  }
   .nav-item.active{
     color:$blue;
     border-color:$blue;
