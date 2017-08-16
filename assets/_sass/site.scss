@@ -79,7 +79,7 @@ h2{
     }
   }
   #nav-shop{
-    &:hover:after{
+    &:hover:after, &:focus:after{
       font-family:"FontAwesome";
       content:"\f14c";
       font-size:0.6em !important;
@@ -119,8 +119,8 @@ h2{
 }
 // Index hero
 .issue-cover{
-    @include transform(translateZ(1px) rotate(-4deg));
-    @include box-shadow(-10px 10px 0px $blue);
+  @include transform(translateZ(1px) rotate(-4deg));
+  @include box-shadow(-10px 10px 0px $blue);
 }
 #issue-number{
   position:fixed;
@@ -361,4 +361,25 @@ footer{
 .carousel-item-next,
 .carousel-item-prev {
   display: block;
+}
+// Media Queries
+@media only screen
+and (max-width : 550px) {
+  .navigation{
+    .nav-item{
+      font-size:1.6em;
+    }
+    ul{
+      font-size:0.8em !important;
+    }
+    #nav-shop{
+      &:hover:after, &:focus:after{
+        top:10px;
+      }
+    }
+  }
+  .issue-cover{
+    @include transform(translateZ(1px) rotate(0deg));
+    @include box-shadow(0 10px 0px -4px $blue);
+  }
 }
