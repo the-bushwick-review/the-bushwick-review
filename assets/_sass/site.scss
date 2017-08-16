@@ -210,7 +210,7 @@ h2.inside-the-issue{
 }
 .btn-soldout{
   @include btn-standard($grey-9, $white, $grey-9, $grey-9, $white, $grey-9, 0.75, 1);
-  cursor:default;
+  cursor:not-allowed;
   color:$grey-9 !important;
 }
 .btn-l{
