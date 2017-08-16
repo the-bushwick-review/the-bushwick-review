@@ -30,6 +30,9 @@ h2{
       padding-bottom:1px;
       text-decoration:none;
     }
+    &:focus{
+      outline:1px dotted $blue;
+    }
   }
 // Navigation
 #logo{
