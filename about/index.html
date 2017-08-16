@@ -29,11 +29,11 @@ js-head:
         {% for stockist in site.data.stockists.stockists %}
           <div class="col-md-4 col-sm-6 col-xs-12 mb-4 pb-2 s-{{ stockist.id }}">
             <div class="stockist match-height">
-              <a href="{{ stockist.url }}">{{ stockist.name }}</a>
-              <span class="stockist-address">
+              <a href="{{ stockist.url }}" target="_blank" rel="noopener noreferrer">{{ stockist.name }}</a>
+              <small class="stockist-address">
                 {{ stockist.address }}<br />
                 {{ stockist.city }}, {{ stockist.state }}
-              </span>
+              </small>
             </div>
           </div>
         {% endfor %}
