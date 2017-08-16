@@ -13,7 +13,7 @@ og-image: https://i.ytimg.com/vi/zbCbwP6ibR4/maxresdefault.jpg
   {% for issue in site.data.issues.issues %}
     {% if issue.buy-url != null %}
       <a href="{{ issue.buy-url }}" target="_blank" rel="noopener noreferrer">
-        <img class="img-fluid mb-2" alt="Buy The Bushwick Review Issue {{ issue.number }}" title="Buy The Bushwick Review Issue {{ issue.number }}" src="{{ site.github.url }}/assets/img/{{ issue.img }}"  />
+        <img class="img-fluid mb-2" alt="Buy The Bushwick Review Issue {{ issue.number }} on Big Cartel" title="Buy The Bushwick Review Issue {{ issue.number }} on Big Cartel" src="{{ site.github.url }}/assets/img/{{ issue.img }}"  />
       </a>
     {% else %}
       <img class="img-fluid mb-2" alt="The Bushwick Review Issue {{ issue.number }}" title="The Bushwick Review Issue {{ issue.number }}" src="{{ site.github.url }}/assets/img/{{ issue.img }}"  />
@@ -22,7 +22,7 @@ og-image: https://i.ytimg.com/vi/zbCbwP6ibR4/maxresdefault.jpg
       <div class="row">
         <div class="col-12 mb-4 pb-sm-2 issue issue-{{ issue.id }}">
           {% if issue.buy-url != null %}
-            <a href="{{ issue.buy-url }}" target="_blank" rel="noopener noreferrer">{{ issue.name }} {{ issue.number }}<a/>
+            <a href="{{ issue.buy-url }}" target="_blank" rel="noopener noreferrer">{{ issue.name }} {{ issue.number }}</a>
           {% else %}
             {{ issue.name }} {{ issue.number }}
           {% endif %}
@@ -37,7 +37,7 @@ og-image: https://i.ytimg.com/vi/zbCbwP6ibR4/maxresdefault.jpg
               <a class="btn btn-soldout"><i class="fa fa-meh-o" aria-hidden="true"></i> Sold Out</a>
             {% endif %}
             {% if issue.read-url != null %}
-              <a class="btn btn-read" href="{{ issue.read-url }}" target="_blank" rel="noopener noreferrer"> <i class="fa fa-file-o" aria-hidden="true"></i> Read</a>
+              <a class="btn btn-read" href="{{ issue.read-url }}" title="Read The Bushwick Review Issue {{ issue.number }} on Issu" target="_blank" rel="noopener noreferrer"> <i class="fa fa-file-o" aria-hidden="true"></i> Read</a>
             {% endif %}
           </div>
         </div>
@@ -52,9 +52,9 @@ og-image: https://i.ytimg.com/vi/zbCbwP6ibR4/maxresdefault.jpg
       <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4 pb-sm-2 issue issue-{{ issue.id }}">
         {% if issue.buy-url != null %}
           <a href="{{ issue.buy-url }}" target="_blank" rel="noopener noreferrer">
-            <img class="img-fluid mb-2" alt="Buy The Bushwick Review Issue {{ issue.number }}" title="Buy The Bushwick Review Issue {{ issue.number }}" src="{{ site.github.url }}/assets/img/{{ issue.img }}"  />
+            <img class="img-fluid mb-2" alt="Buy The Bushwick Review Issue {{ issue.number }} on Big Cartel" title="Buy The Bushwick Review Issue {{ issue.number }} on Big Cartel" src="{{ site.github.url }}/assets/img/{{ issue.img }}"  />
           </a>
-          <a href="{{ issue.buy-url }}">{{ issue.name }} {{ issue.number }}<a/>
+          <a href="{{ issue.buy-url }}">{{ issue.name }} {{ issue.number }}</a>
         {% else %}
           <img class="img-fluid mb-2" alt="The Bushwick Review Issue {{ issue.number }}" title="The Bushwick Review Issue {{ issue.number }}" src="{{ site.github.url }}/assets/img/{{ issue.img }}"  />
           {{ issue.name }} {{ issue.number }}
@@ -70,7 +70,7 @@ og-image: https://i.ytimg.com/vi/zbCbwP6ibR4/maxresdefault.jpg
             <a class="btn btn-soldout"><i class="fa fa-meh-o" aria-hidden="true"></i> Sold Out</a>
           {% endif %}
           {% if issue.read-url != null %}
-            <a class="btn btn-read" href="{{ issue.read-url }}" target="_blank" rel="noopener noreferrer"> <i class="fa fa-file-o" aria-hidden="true"></i> Read</a>
+            <a class="btn btn-read" href="{{ issue.read-url }}" title="Read The Bushwick Review Issue {{ issue.number }} on Issu" target="_blank" rel="noopener noreferrer"> <i class="fa fa-file-o" aria-hidden="true"></i> Read</a>
           {% endif %}
         </div>
       </div>
