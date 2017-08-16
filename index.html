@@ -1,22 +1,20 @@
 ---
 layout: default
 ---
-<div class="fixed-hero">
-  {% include nav.html %}
-  <div class="container">
-    <div class="row">
-      <div class="col-md-5 offset-md-1">
-        <img class="issue-cover img-fluid my-4" src="{{ site.github.url }}/assets/img/issue-7-cover.jpg" />
-        <div class="row mt-4">
-          <div class="col-md-8 offset-md-2 text-center">
-            <h2 class="d-block mb-4">$10.00</h2>
-            <a href="http://thebushwickreview.bigcartel.com/product/the-bushwick-review-vii" title="Buy Issue No. 7 online at Big Cartel" target="_blank" rel="noopener noreferrer" class="btn btn-buy btn-l rotate-06"><i class="fa fa-diamond" aria-hidden="true"></i>Buy Now!</a>
-          </div>
+{% include nav.html %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-5 offset-md-1">
+      <img class="issue-cover img-fluid my-4" src="{{ site.github.url }}/assets/img/issue-7-cover.jpg" />
+      <div class="row mt-1 mt-sm-4">
+        <div class="col-md-8 offset-md-2 text-center">
+          <h2 class="d-block mb-4">$10.00</h2>
+          <a href="http://thebushwickreview.bigcartel.com/product/the-bushwick-review-vii" title="Buy Issue No. 7 online at Big Cartel" target="_blank" rel="noopener noreferrer" class="btn btn-buy btn-l rotate-06"><i class="fa fa-diamond" aria-hidden="true"></i>Buy Now!</a>
         </div>
-
       </div>
-      {% include contributors.html %}
+
     </div>
+    {% include contributors.html %}
   </div>
 </div>
 {% include issue-carousel.html %}

@@ -24,6 +24,7 @@ h2{
     border:none;
     text-decoration:none;
     border-bottom:2px solid transparent;
+    padding-bottom:1px;
     &:hover{
       color:$blue;
       border-bottom:2px solid $blue;
@@ -72,7 +73,8 @@ h2{
     }
     h1{
       font-size:inherit;
-      padding:inherit;
+      padding:0;
+      margin:0;
       line-height:inherit;
     }
   }
@@ -116,16 +118,6 @@ h2{
   }
 }
 // Index hero
-.fixed-hero{
-  //background-image:url('../img/cover-alt.jpg');
-  background-attachment:fixed;
-  background-position:top center;
-  background-size:100% 500px;
-  background-repeat:no-repeat;
-  padding-bottom:60px;
-
-
-}
 .issue-cover{
     @include transform(translateZ(1px) rotate(-4deg));
     @include box-shadow(-10px 10px 0px $blue);
@@ -234,7 +226,22 @@ h2.inside-the-issue{
 // About index
 .stockist{
   padding:15px;
-  background:$rose;
+  background:$white;
+  border:2px solid $rose;
+  @include border-radius(2px);
+  line-height:1.2em;
+
+  a{
+    color:$rose;
+    margin-bottom:5px;
+    &:hover{
+      border-color:$rose;
+    }
+  }
+  .stockist-address{
+    display:block;
+    margin-top:15px;
+  }
 }
 // Helpers
 .margin-bottom-5{margin-bottom:5px;}
