@@ -21,13 +21,18 @@ js-head:
        <strong>Contact</strong> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Say hi! We're nice. <i class="fa fa-long-arrow-right" aria-hidden="true"></i> <a href="mailto:bushwickreview@gmail.com">bushwickreview@gmail.com</a>
       </p>
     </div>
-    <div class="col-md-12 mb-4 pb-4">
+  </div>
+</div>
+<div class="container-wrap--peach pb-4">
+  <div class="container">
+    <div class="row justify-content-between">
+    <div class="col-md-4 mb-4 pb-4">
       <div class="row" id="stockists">
         <div class="col-md-12 mb-3">
           <h2>Stockists</h2>
         </div>
         {% for stockist in site.data.stockists.stockists %}
-          <div class="col-md-4 col-sm-6 col-xs-12 mb-4 pb-2 s-{{ stockist.id }}">
+          <div class="col-md-12 col-sm-6 col-xs-12 mb-1 pb-1 s-{{ stockist.id }}">
             <div class="stockist match-height">
               <a href="{{ stockist.url }}" target="_blank" rel="noopener noreferrer">{{ stockist.name }}</a>
               <small class="stockist-address">
@@ -39,20 +44,19 @@ js-head:
         {% endfor %}
       </div>
     </div>
-    <div class="col-md-8 mb-4">
-      <div class="row">
-        <div class="col-md-12 mb-3">
-          <h2>Press</h2>
-        </div>
-        {% for press-clip in site.data.press-clips.press-clips %}
-          <div class="col-md-12 mb-4 p-{{ press-clip.id }}">
-            <a href="{{ press-clip.url }}" target="_blank" rel="noopener noreferrer">{{ press-clip.name }}</a><br />
-            <small class="">
-              <span class="pull-left">{{ press-clip.title }}<span>
-              <span class="pull-right">{{ press-clip.month }} | {{ press-clip.day }} | {{ press-clip.year }}</span>
-            </small>
-          </div>
-        {% endfor %}
+    <div class="col-md-4 mb-4 press-clips">
+      <h2 class="mb-3">Press</h2>
+        <ul>
+          {% for press-clip in site.data.press-clips.press-clips %}
+            <li class="match-height">
+              <a href="{{ press-clip.url }}" target="_blank" rel="noopener noreferrer">{{ press-clip.name }}</a><br />
+              <small>
+                {{ press-clip.title }}<br />
+                {{ press-clip.month }} | {{ press-clip.day }} | {{ press-clip.year }}
+              </small>
+            </li>
+          {% endfor %}
+        </ul>
       </div>
     </div>
   </div>

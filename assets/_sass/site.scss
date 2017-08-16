@@ -227,20 +227,44 @@ h2.inside-the-issue{
 .stockist{
   padding:15px;
   background:$white;
-  border:2px solid $rose;
   @include border-radius(2px);
   line-height:1.2em;
-
+  border-bottom:2px solid $peach;
   a{
-    color:$rose;
+    color:$peach;
     margin-bottom:5px;
+    border-color:$peach;
     &:hover{
-      border-color:$rose;
+      border-color:$peach;
     }
   }
   .stockist-address{
     display:block;
     margin-top:15px;
+  }
+}
+.press-clips{
+  ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    li{
+      margin-bottom:0;
+      padding:15px 0;
+      @include border-radius(2px);
+      a{
+        color:$white;
+        border-color:$white;
+        &:hover{
+          border-color:$white;
+        }
+      }
+      small{
+        display:block;
+        margin-top:15px;
+
+      }
+    }
   }
 }
 // Helpers
