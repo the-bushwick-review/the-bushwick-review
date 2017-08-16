@@ -3,16 +3,13 @@ layout: default
 title: Issues
 nav: issues
 metadata: true
-og-title: The Bushwick Review Issues
-og-description: The Bushwick Review is a literary and art magazine that features over 20 contributors each issue. Over the years, we've featured short stories, essays, poetry, photography, paintings, drawings, architecture, plays, comics (basically anything that can be printed on a black and white page). The current issue is always only available in print.
+og-title: Issues - The Bushwick Review
+og-description: The Bushwick Review is a literary and art magazine that features over 20 contributors each issue. Over the years, we've featured short stories, essays, poetry, photography, paintings, drawings, architecture, plays, comics, and more. The current issue is always only available in print.
 og-image: https://i.ytimg.com/vi/zbCbwP6ibR4/maxresdefault.jpg
 ---
 {% include nav.html %}
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
-      <h1>Issues</h1>
-    </div>
     {% for issue in site.data.issues.issues %}
       <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 margin-bottom-60 issue issue-{{ issue.id }}">
         {% if issue.buy-url != null %}

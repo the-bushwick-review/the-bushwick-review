@@ -50,7 +50,6 @@ h2{
   line-height:auto;
   color:$body;
   text-align:left;
-
   .nav-item{
     font-size:2em;
     font-weight:800;
@@ -68,6 +67,11 @@ h2{
       border-bottom:0 !important;
       padding-bottom:0 !important;
     }
+    h1{
+      font-size:inherit;
+      padding:inherit;
+      line-height:inherit;
+    }
   }
   #nav-shop{
     &:hover:after{
@@ -83,7 +87,6 @@ h2{
     color:$blue;
     border-color:$blue;
   }
-
   ul{
     list-style:none;
     margin:0;
