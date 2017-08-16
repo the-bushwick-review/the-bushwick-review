@@ -8,30 +8,71 @@ og-description: The Bushwick Review is a literary and art magazine that features
 og-image: https://i.ytimg.com/vi/zbCbwP6ibR4/maxresdefault.jpg
 ---
 {% include nav.html %}
-<div class="container">
+{% comment %}MOBILE VIEW{% endcomment %}
+<div class="row no-gutters d-block d-sm-none">
+  {% for issue in site.data.issues.issues %}
+    {% if issue.buy-url != null %}
+      <a href="{{ issue.buy-url }}" target="_blank" rel="noopener noreferrer">
+        <img class="img-fluid mb-2" alt="Buy The Bushwick Review Issue {{ issue.number }}" title="Buy The Bushwick Review Issue {{ issue.number }}" src="{{ site.github.url }}/assets/img/{{ issue.img }}"  />
+      </a>
+    {% else %}
+      <img class="img-fluid mb-2" alt="The Bushwick Review Issue {{ issue.number }}" title="The Bushwick Review Issue {{ issue.number }}" src="{{ site.github.url }}/assets/img/{{ issue.img }}"  />
+    {% endif %}
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-4 pb-sm-2 issue issue-{{ issue.id }}">
+          {% if issue.buy-url != null %}
+            <a href="{{ issue.buy-url }}" target="_blank" rel="noopener noreferrer">{{ issue.name }} {{ issue.number }}<a/>
+          {% else %}
+            {{ issue.name }} {{ issue.number }}
+          {% endif %}
+          {% if issue.description != null %}
+            <small class="d-block mb-1">{{ issue.description }}</small>
+          {% endif %}
+          $ {{ issue.price }}
+          <div class="d-block mt-2">
+            {% if issue.buy-url != null %}
+              <a class="btn btn-buy" href="{{ issue.buy-url }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-diamond" aria-hidden="true"></i> Buy</a>
+            {% elsif issue.sold-out == true %}
+              <a class="btn btn-soldout"><i class="fa fa-meh-o" aria-hidden="true"></i> Sold Out</a>
+            {% endif %}
+            {% if issue.read-url != null %}
+              <a class="btn btn-read" href="{{ issue.read-url }}" target="_blank" rel="noopener noreferrer"> <i class="fa fa-file-o" aria-hidden="true"></i> Read</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% comment %}DESKTOP VIEW{% endcomment %}
+<div class="container d-none d-sm-block">
   <div class="row">
     {% for issue in site.data.issues.issues %}
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 margin-bottom-60 issue issue-{{ issue.id }}">
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4 pb-sm-2 issue issue-{{ issue.id }}">
         {% if issue.buy-url != null %}
-          <a href="{{ issue.buy-url }}"><img class="img-fluid margin-bottom-15" alt="Buy The Bushwick Review Issue {{ issue.number }}" title="Buy The Bushwick Review Issue {{ issue.number }}" src="{{ site.github.url }}/assets/img/{{ issue.img }}"  /></a>
-          <a href="{{ issue.buy-url }}">{{ issue.name }} {{ issue.number }}<a/><br />
+          <a href="{{ issue.buy-url }}" target="_blank" rel="noopener noreferrer">
+            <img class="img-fluid mb-2" alt="Buy The Bushwick Review Issue {{ issue.number }}" title="Buy The Bushwick Review Issue {{ issue.number }}" src="{{ site.github.url }}/assets/img/{{ issue.img }}"  />
+          </a>
+          <a href="{{ issue.buy-url }}">{{ issue.name }} {{ issue.number }}<a/>
         {% else %}
-          <img class="img-fluid margin-bottom-15" alt="The Bushwick Review Issue {{ issue.number }}" title="The Bushwick Review Issue {{ issue.number }}" src="{{ site.github.url }}/assets/img/{{ issue.img }}"  />
-          {{ issue.name }} {{ issue.number }}<br />
+          <img class="img-fluid mb-2" alt="The Bushwick Review Issue {{ issue.number }}" title="The Bushwick Review Issue {{ issue.number }}" src="{{ site.github.url }}/assets/img/{{ issue.img }}"  />
+          {{ issue.name }} {{ issue.number }}
         {% endif %}
         {% if issue.description != null %}
-          <small>{{ issue.description }}</small>
+          <small class="d-block mb-1">{{ issue.description }}</small>
         {% endif %}
-        <br />$ {{ issue.price }}<br />
-        {% if issue.buy-url != null %}
-          <a class="btn btn-buy" href="{{ issue.buy-url }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-diamond" aria-hidden="true"></i> Buy</a>
-        {% elsif issue.sold-out == true %}
-          <a class="btn btn-soldout"><i class="fa fa-meh-o" aria-hidden="true"></i> Sold Out</a>
-        {% endif %}
-        {% if issue.read-url != null %}
-          <a class="btn btn-read" href="{{ issue.read-url }}" target="_blank" rel="noopener noreferrer"> <i class="fa fa-file-o" aria-hidden="true"></i> Read</a>
-        {% endif %}
-
+        $ {{ issue.price }}
+        <div class="d-block mt-2">
+          {% if issue.buy-url != null %}
+            <a class="btn btn-buy" href="{{ issue.buy-url }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-diamond" aria-hidden="true"></i> Buy</a>
+          {% elsif issue.sold-out == true %}
+            <a class="btn btn-soldout"><i class="fa fa-meh-o" aria-hidden="true"></i> Sold Out</a>
+          {% endif %}
+          {% if issue.read-url != null %}
+            <a class="btn btn-read" href="{{ issue.read-url }}" target="_blank" rel="noopener noreferrer"> <i class="fa fa-file-o" aria-hidden="true"></i> Read</a>
+          {% endif %}
+        </div>
       </div>
     {% endfor %}
   </div>

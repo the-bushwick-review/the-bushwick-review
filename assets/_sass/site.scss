@@ -171,8 +171,16 @@ h2.inside-the-issue{
 // Issues Index
 .issue{
 
+  a{
+    color:$body;
+    &:hover{
+      color:$blue;
+    }
+  }
+
   small{
     color:$grey-9;
+    line-height:1.2em;
   }
 }
 @mixin btn-standard($btn-text, $btn-background, $btn-border, $btn-text-hover, $btn-background-hover, $btn-border-hover, $icon-opacity, $icon-opacity-hover){
@@ -181,7 +189,7 @@ h2.inside-the-issue{
   border:2px solid $btn-border;
   letter-spacing:0.04em;
   font-weight:600;
-  padding:6px 24px;
+  padding:6px 18px;
   margin:0 12px 12px 0;
   @include border-radius(4px);
   @include transition(all ease-in-out 0.1s);
@@ -190,7 +198,7 @@ h2.inside-the-issue{
     color:$btn-text-hover;
     background-color:$btn-background-hover;
     border:2px solid $btn-border-hover;
-    padding:6px 24px;
+    padding:6px 18px;
     i.fa{
       color:$btn-text-hover;
       opacity:$icon-opacity-hover;
