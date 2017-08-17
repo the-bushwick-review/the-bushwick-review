@@ -5,7 +5,7 @@ nav: issues
 metadata: true
 og-title: Issues - The Bushwick Review
 og-description: The Bushwick Review is a literary and art magazine that features over 20 contributors each issue. Over the years, we've featured short stories, essays, poetry, photography, paintings, drawings, architecture, plays, comics, and more. The current issue is always only available in print.
-og-image: https://i.ytimg.com/vi/zbCbwP6ibR4/maxresdefault.jpg
+og-image: http://www.thebushwickreview.com/assets/img/the-bushwick-review-issue-7-og.jpg
 ---
 {% include nav.html %}
 {% comment %}MOBILE VIEW{% endcomment %}
@@ -32,7 +32,7 @@ og-image: https://i.ytimg.com/vi/zbCbwP6ibR4/maxresdefault.jpg
           $ {{ issue.price }}
           <div class="d-block mt-2">
             {% if issue.buy-url != null %}
-              <a class="btn btn-buy" href="{{ issue.buy-url }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-diamond" aria-hidden="true"></i> Buy</a>
+              <a class="btn btn-buy" href="{{ issue.buy-url }}" target="_blank" rel="noopener noreferrer" title="Buy The Bushwick Review Issue {{ issue.number }} on Big Cartel"><i class="fa fa-diamond" aria-hidden="true"></i> Buy</a>
             {% elsif issue.sold-out == true %}
               <a class="btn btn-soldout"><i class="fa fa-meh-o" aria-hidden="true"></i> Sold Out</a>
             {% endif %}
@@ -65,7 +65,7 @@ og-image: https://i.ytimg.com/vi/zbCbwP6ibR4/maxresdefault.jpg
         $ {{ issue.price }}
         <div class="d-block mt-2">
           {% if issue.buy-url != null %}
-            <a class="btn btn-buy" href="{{ issue.buy-url }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-diamond" aria-hidden="true"></i> Buy</a>
+            <a class="btn btn-buy" href="{{ issue.buy-url }}" target="_blank" rel="noopener noreferrer" title="Buy The Bushwick Review Issue {{ issue.number }} on Big Cartel"><i class="fa fa-diamond" aria-hidden="true"></i> Buy</a>
           {% elsif issue.sold-out == true %}
             <a class="btn btn-soldout"><i class="fa fa-meh-o" aria-hidden="true"></i> Sold Out</a>
           {% endif %}
