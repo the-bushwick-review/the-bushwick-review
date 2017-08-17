@@ -293,6 +293,12 @@ h2.inside-the-issue{
   background-color:$green;
   padding-top:60px;
 }
+.container-wrap--blue{
+  width:100%;
+  height:100%;
+  background-color:$blue;
+  padding-top:60px;
+}
 // Issue carousel
 ol.carousel-indicators{
   position:absolute;
@@ -305,7 +311,7 @@ ol.carousel-indicators{
     margin:0 5px;
     border:3px solid $white;
     @include border-radius(2px);
-
+    cursor:pointer;
     &:hover{
       border-color:$body;
     }
@@ -336,6 +342,7 @@ ol.carousel-indicators{
   @include border-radius(2px);
 }
 .arrow-left,.arrow-right{
+  outline:none !important;
   &:hover{
     border-color:$body;
     border-width:4px;
