@@ -31,6 +31,16 @@
     "url":"http://bluestockings.com/"
     },
     {
+    "id":"010",
+    "name":"The Mall",
+    "address":"916 Springdale Road",
+    "city":"Austin",
+    "state":"TX",
+    "zip":"78702",
+    "description":,
+    "url":,
+    },
+    {
     "id":"007",
     "name":"McNally Jackson",
     "address":"52 Prince St",
