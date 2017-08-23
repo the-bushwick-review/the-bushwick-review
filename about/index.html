@@ -11,7 +11,7 @@ js-head:
 ---
 {% include nav.html %}
 <div class="container">
-  <div class="row">
+  <div class="row justify-content-center">
     <div class="col-md-8 mb-4 pb-4">
       <h2 class="mb-3">Who Dat?</h2>
       <p>The Bushwick Review is a literary and art magazine that features over 20 contributors each issue. Over the years, we've featured short stories, essays, poetry, photography, paintings, drawings, architecture, plays, comics (basically anything that can be printed on a black and white page). The current issue is always only available in print.</p>
@@ -23,16 +23,15 @@ js-head:
     </div>
   </div>
 </div>
-<div class="container-wrap--peach pb-4">
-  <div class="container">
-    <div class="row justify-content-between">
-    <div class="col-md-4 mb-4 pb-4">
-      <div class="row" id="stockists">
+<div class="container">
+  <div class="row mb-4">
+    <div class="col-md-12 mb-4 pb-4">
+      <div class="row no-gutters" id="stockists">
         <div class="col-md-12 mb-3">
           <h2>Stockists</h2>
         </div>
         {% for stockist in site.data.stockists.stockists %}
-          <div class="col-md-12 col-sm-6 col-xs-12 mb-1 pb-1 s-{{ stockist.id }}">
+          <div class="col-md-4 col-sm-6 col-xs-12 s-{{ stockist.id }}">
             <div class="stockist match-height">
               <a href="{{ stockist.url }}" target="_blank" rel="noopener noreferrer">{{ stockist.name }}</a>
               <small class="stockist-address">
@@ -44,23 +43,32 @@ js-head:
         {% endfor %}
       </div>
     </div>
-    <div class="col-md-4 mb-4 press-clips">
-      <h2>QUOTE HERE</h2>
-      <p>From prose to photography to sequential art, the publication is united by a dark sense of humor suggesting that people who tell you that you can laugh OR cry at dire situations aren't thinking creatively enough."
-- <a href="https://www.instagram.com/p/BXoQ1bsjQnC/">artbook @ MoMA PS1</a></p>
-      <h2 class="mb-3">Press</h2>
-        <ul>
-          {% for press-clip in site.data.press-clips.press-clips %}
-            <li class="match-height">
-              <a href="{{ press-clip.url }}" target="_blank" rel="noopener noreferrer">{{ press-clip.name }}</a><br />
-              <small>
-                {{ press-clip.title }}<br />
-                {{ press-clip.month }} | {{ press-clip.day }} | {{ press-clip.year }}
-              </small>
-            </li>
-          {% endfor %}
-        </ul>
+  </div>
+</div>
+<div class="container-wrap--green my-4 pb-4">
+  <div class="container mb-4 pb-1">
+    <div class="row no-gutters mb-2">
+      <div class="col-12 mb-3">
+        <h2>Press</h2>
+        <div class="row">
+          <div class="col-8 text-center mb-4">
+            <p><strong>" <br />From prose to photography to sequential art, the publication is united by a dark sense of humor suggesting that people who tell you that you can laugh OR cry at dire situations aren't thinking creatively enough.<br />"</strong></p>
+            <a href="https://www.instagram.com/p/BXoQ1bsjQnC/">artbook @ MoMA PS1</a>
+          </div>
+        </div>
       </div>
+
+      {% for press-clip in site.data.press-clips.press-clips %}
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="press-clip match-height">
+            <a href="{{ press-clip.url }}" target="_blank" rel="noopener noreferrer">{{ press-clip.name }}</a><br />
+            <small>
+              {{ press-clip.title }}<br />
+              {{ press-clip.month }} | {{ press-clip.day }} | {{ press-clip.year }}
+            </small>
+          </div>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </div>

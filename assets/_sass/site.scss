@@ -240,15 +240,17 @@ h2.inside-the-issue{
 .stockist{
   padding:15px;
   background:$white;
-  @include border-radius(2px);
   line-height:1.2em;
-  border-bottom:2px solid $peach;
+  border:1px dotted $body;
+  margin-left:-1px;
+  margin-bottom:-1px;
   a{
-    color:$peach;
+    color:$body;
+    border-color:$body;
     margin-bottom:5px;
-    border-color:$peach;
     &:hover{
-      border-color:$peach;
+      border-color:$blue;
+      color:$blue;
     }
   }
   .stockist-address{
@@ -256,18 +258,15 @@ h2.inside-the-issue{
     margin-top:15px;
   }
 }
-.press-clips{
-  ul{
-    list-style:none;
-    margin:0;
-    padding:0;
-    li{
-      margin-bottom:0;
-      padding:15px 0;
-      @include border-radius(2px);
+
+  .press-clip{
+    padding:15px;
+    border:1px dotted $body;
+    margin-left:-1px;
+    margin-bottom:-1px;
       a{
-        color:$white;
-        border-color:$white;
+        color:$body;
+        border-color:$body;
         &:hover{
           border-color:$white;
         }
@@ -278,7 +277,10 @@ h2.inside-the-issue{
 
       }
     }
-  }
+
+
+.ps1-quote{
+  font-size:2em;
 }
 // Container wraps
 .container-wrap--peach{
