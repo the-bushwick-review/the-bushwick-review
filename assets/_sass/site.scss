@@ -464,6 +464,8 @@ and (max-width : 550px) {
   .issue-cover{
     @include transform(translateZ(1px) rotate(0deg));
     @include box-shadow(none);
+    -webkit-animation: none;
+    animation: none;
   }
   .featuring{
     font-size:0.8em;
