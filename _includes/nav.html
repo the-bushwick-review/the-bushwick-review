@@ -1,8 +1,8 @@
 <div class="container">
   <nav class="row mb-4 pb-sm-4 mt-sm-4 pt-4 navigation">
     <div id="logo" class="col-md-8 col-sm-6 col-6 mb-3">
-      <a href="{{ site.github.url }}/">
-        <img class="logo-bg img-fluid" src="{{ site.github.url }}/assets/img/bushwick-review-logo-transparent.png" alt="The Bushwick Review" title="The Bushwick Review" />
+      <a href="{{ site.url }}{{ site.baseurl }}">
+        <img class="logo-bg img-fluid" src="{{ site.url }}{{ site.baseurl }}/assets/img/bushwick-review-logo-transparent.png" alt="The Bushwick Review" title="The Bushwick Review" />
       </a>
     </div>
     <div class="col-md-4 col-sm-6 col-6">
@@ -19,14 +19,14 @@
       <a class="nav-item {% if page.nav == 'shop' %}active{% endif %}" target="_blank" rel="noopener nofollow" id="nav-shop" href="http://thebushwickreview.bigcartel.com/products" title="Buy The Bushwick Review on Big Cartel">Shop </a>
     </div>
     <div class="col-md-4 ">
-        <a class="nav-item {% if page.nav == 'issues' %}active{% endif %}" id="nav-issues" href="{{ site.github.url }}/issues">
+        <a class="nav-item {% if page.nav == 'issues' %}active{% endif %}" id="nav-issues" href="{{ site.url }}{{ site.baseurl }}/issues">
           {% if page.nav == "issues" %}<h1>{% endif %}
             Issues
           {% if page.nav == "issues" %}</h1>{% endif %}
         </a>
     </div>
     <div class="col-md-4">
-      <a class="nav-item {% if page.nav == 'about' %}active{% endif %}" id="nav-about" href="{{ site.github.url }}/about">
+      <a class="nav-item {% if page.nav == 'about' %}active{% endif %}" id="nav-about" href="{{ site.url }}{{ site.baseurl }}/about">
         {% if page.nav == "about" %}<h1>{% endif %}
           About
         {% if page.nav == "about" %}</h1>{% endif %}

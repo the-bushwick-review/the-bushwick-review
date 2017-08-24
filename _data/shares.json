@@ -2,10 +2,10 @@
   "_comment":"JSON for repeating generalized share/meta info in the page head.",
   "shares":[
     {
-    "url":"http://www.thebushwickreview.com",
+    "url":"",
     "name":"The Bushwick Review",
     "description":"The Bushwick Review is a literary and art magazine that features over 20 contributors each issue. Over the years, we've featured short stories, essays, poetry, photography, paintings, drawings, architecture, plays, comics, and more. The current issue is always only available in print.",
-    "img":"http://www.imageurlhere.com"
+    "img":"/assets/img/the-bushwick-review-issue-7-og.jpg"
     }
   ]
 }

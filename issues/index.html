@@ -5,7 +5,7 @@ nav: issues
 metadata: true
 og-title: Issues - The Bushwick Review
 og-description: The Bushwick Review is a literary and art magazine that features over 20 contributors each issue. Over the years, we've featured short stories, essays, poetry, photography, paintings, drawings, architecture, plays, comics, and more. The current issue is always only available in print.
-og-image: http://www.thebushwickreview.com/assets/img/the-bushwick-review-issue-7-og.jpg
+og-image: /assets/img/the-bushwick-review-issue-7-og.jpg
 ---
 {% include nav.html %}
 {% comment %}MOBILE VIEW{% endcomment %}
@@ -13,10 +13,10 @@ og-image: http://www.thebushwickreview.com/assets/img/the-bushwick-review-issue-
   {% for issue in site.data.issues.issues %}
     {% if issue.buy-url != null %}
       <a href="{{ issue.buy-url }}" target="_blank" rel="noopener noreferrer">
-        <img class="img-fluid mb-2" alt="Buy The Bushwick Review Issue {{ issue.number }} on Big Cartel" title="Buy The Bushwick Review Issue {{ issue.number }} on Big Cartel" src="{{ site.github.url }}/assets/img/{{ issue.img }}"  />
+        <img class="img-fluid mb-2" alt="Buy The Bushwick Review Issue {{ issue.number }} on Big Cartel" title="Buy The Bushwick Review Issue {{ issue.number }} on Big Cartel" src="{{ site.url }}{{ site.baseurl }}/assets/img/{{ issue.img }}"  />
       </a>
     {% else %}
-      <img class="img-fluid mb-2" alt="The Bushwick Review Issue {{ issue.number }}" title="The Bushwick Review Issue {{ issue.number }}" src="{{ site.github.url }}/assets/img/{{ issue.img }}"  />
+      <img class="img-fluid mb-2" alt="The Bushwick Review Issue {{ issue.number }}" title="The Bushwick Review Issue {{ issue.number }}" src="{{ site.url }}{{ site.baseurl }}/assets/img/{{ issue.img }}"  />
     {% endif %}
     <div class="container">
       <div class="row">
@@ -52,11 +52,11 @@ og-image: http://www.thebushwickreview.com/assets/img/the-bushwick-review-issue-
       <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4 pb-sm-2 issue issue-{{ issue.id }}">
         {% if issue.buy-url != null %}
           <a href="{{ issue.buy-url }}" target="_blank" rel="noopener noreferrer">
-            <img class="img-fluid mb-2" alt="Buy The Bushwick Review Issue {{ issue.number }} on Big Cartel" title="Buy The Bushwick Review Issue {{ issue.number }} on Big Cartel" src="{{ site.github.url }}/assets/img/{{ issue.img }}"  />
+            <img class="img-fluid mb-2" alt="Buy The Bushwick Review Issue {{ issue.number }} on Big Cartel" title="Buy The Bushwick Review Issue {{ issue.number }} on Big Cartel" src="{{ site.url }}{{ site.baseurl }}/assets/img/{{ issue.img }}"  />
           </a>
           <a href="{{ issue.buy-url }}">{{ issue.name }} {{ issue.number }}</a>
         {% else %}
-          <img class="img-fluid mb-2" alt="The Bushwick Review Issue {{ issue.number }}" title="The Bushwick Review Issue {{ issue.number }}" src="{{ site.github.url }}/assets/img/{{ issue.img }}"  />
+          <img class="img-fluid mb-2" alt="The Bushwick Review Issue {{ issue.number }}" title="The Bushwick Review Issue {{ issue.number }}" src="{{ site.url }}{{ site.baseurl }}/assets/img/{{ issue.img }}"  />
           {{ issue.name }} {{ issue.number }}
         {% endif %}
         {% if issue.description != null %}
