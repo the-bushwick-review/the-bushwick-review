@@ -39,8 +39,8 @@ a{
   .logo-bg{
     background:#000;
     &:hover{
-      -webkit-animation: logo 5s cubic-bezier(1,0,0,1) infinite;
-      animation: logo 5s cubic-bezier(1,0,0,1) infinite;
+      -webkit-animation: logo 10s linear infinite;
+      animation: logo 10s linear infinite;
       cursor:pointer;
     }
   }
@@ -126,8 +126,8 @@ a{
 .issue-cover{
   @include transform(translateZ(1px) rotate(-4deg));
   @include box-shadow(-10px 10px 0px $blue);
-  -webkit-animation: cover-index 5s cubic-bezier(1,0,0,1) infinite;
-  animation: cover-index 5s cubic-bezier(1,0,0,1) infinite;
+  -webkit-animation: cover-index 30s linear 2s infinite;
+  animation: cover-index 30s linear 2s infinite;
 }
 #issue-number{
   position:fixed;
@@ -422,16 +422,16 @@ footer{
 // Animation Keyframes
   // Logo bg
   @-webkit-keyframes logo {
-  0% { background-color: #f99; }
-  33% { background-color: #9f9; }
-  67% { background-color: #99f; }
-  100% { background-color: #f99; }
+  0% { background-color: $blue; }
+  33% { background-color: $green; }
+  67% { background-color: $peach; }
+  100% { background-color: $rose; }
   }
   @keyframes logo {
-  0% { background-color: #f99; }
-  33% { background-color: #9f9; }
-  67% { background-color: #99f; }
-  100% { background-color: #f99; }
+  0% { background-color: $blue; }
+  33% { background-color: $green; }
+  67% { background-color: $peach; }
+  100% { background-color: $rose; }
   }
   // Index cover image
   @-webkit-keyframes cover-index {
