@@ -36,6 +36,14 @@ a{
 }
 // Navigation
 #logo{
+  .logo-bg{
+    background:#000;
+    &:hover{
+      -webkit-animation: logo 5s cubic-bezier(1,0,0,1) infinite;
+      animation: logo 5s cubic-bezier(1,0,0,1) infinite;
+      cursor:pointer;
+    }
+  }
   img{
     width:100px;
   }
@@ -421,6 +429,33 @@ footer{
   padding-left:2px;
   padding-right:2px;
 }
+// Animation Keyframes
+  // Logo bg
+  @-webkit-keyframes logo {
+  0% { background-color: #f99; }
+  33% { background-color: #9f9; }
+  67% { background-color: #99f; }
+  100% { background-color: #f99; }
+  }
+  @keyframes logo {
+  0% { background-color: #f99; }
+  33% { background-color: #9f9; }
+  67% { background-color: #99f; }
+  100% { background-color: #f99; }
+  }
+  // Index cover image
+  @-webkit-keyframes cover-index {
+  0% { background-color: #f99; }
+  33% { background-color: #9f9; }
+  67% { background-color: #99f; }
+  100% { background-color: #f99; }
+  }
+  @keyframes cover-index {
+  0% { background-color: #f99; }
+  33% { background-color: #9f9; }
+  67% { background-color: #99f; }
+  100% { background-color: #f99; }
+  }
 // Media Queries
 @media only screen
 and (max-width : 550px) {
