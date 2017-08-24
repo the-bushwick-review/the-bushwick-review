@@ -238,12 +238,7 @@ h2.inside-the-issue{
 }
 // About index
 .stockist{
-  padding:15px;
-  background:$white;
   line-height:1.2em;
-  border:1px dotted $body;
-  margin-left:-1px;
-  margin-bottom:-1px;
   a{
     color:$body;
     border-color:$body;
@@ -258,29 +253,37 @@ h2.inside-the-issue{
     margin-top:15px;
   }
 }
-
-  .press-clip{
-    padding:15px;
-    border:1px dotted $body;
-    margin-left:-1px;
-    margin-bottom:-1px;
-      a{
-        color:$body;
-        border-color:$body;
-        &:hover{
-          border-color:$white;
-        }
-      }
-      small{
-        display:block;
-        margin-top:15px;
-
-      }
+.press-clip{
+  a{
+    color:$body;
+    border-color:$body;
+    &:hover{
+      border-color:$white;
     }
-
-
+  }
+  small{
+    display:block;
+    margin-top:15px;
+  }
+}
 .ps1-quote{
-  font-size:2em;
+  font-size:1.6em;
+  font-weight:800;
+  line-height:1.2em;
+  i{
+    font-size:.6em;
+    margin-right:10px;
+    color:$white;
+  }
+  a{
+    color:$white;
+    display:inline-block;
+    border-color:$white;
+    &:hover{
+      color:$body;
+      border-color:$body;
+    }
+  }
 }
 // Container wraps
 .container-wrap--peach{
@@ -304,6 +307,7 @@ h2.inside-the-issue{
 // Issue carousel
 ol.carousel-indicators{
   position:absolute;
+  top:-3px;
   margin:0 5px;
 
   li{
@@ -412,6 +416,10 @@ footer{
 .carousel-item-next,
 .carousel-item-prev {
   display: block;
+}
+.carousel-item{
+  padding-left:2px;
+  padding-right:2px;
 }
 // Media Queries
 @media only screen
