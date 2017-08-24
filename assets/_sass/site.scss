@@ -126,6 +126,8 @@ a{
 .issue-cover{
   @include transform(translateZ(1px) rotate(-4deg));
   @include box-shadow(-10px 10px 0px $blue);
+  -webkit-animation: cover-index 5s cubic-bezier(1,0,0,1) infinite;
+  animation: cover-index 5s cubic-bezier(1,0,0,1) infinite;
 }
 #issue-number{
   position:fixed;
@@ -145,18 +147,6 @@ a{
 h2.inside-the-issue{
   font-size:2em;
   color:$white;
-}
-@-webkit-keyframes rainbow {
-  0% { color: #f99; }
-  33% { color: #9f9; }
-  67% { color: #99f; }
-  100% { color: #f99; }
-}
-@keyframes rainbow {
-  0% { color: #f99; }
-  33% { color: #9f9; }
-  67% { color: #99f; }
-  100% { color: #f99; }
 }
 // Content
 .featuring{
@@ -445,16 +435,16 @@ footer{
   }
   // Index cover image
   @-webkit-keyframes cover-index {
-  0% { background-color: #f99; }
-  33% { background-color: #9f9; }
-  67% { background-color: #99f; }
-  100% { background-color: #f99; }
+  0% { @include box-shadow(-10px 10px 0px $blue); }
+  33% { @include box-shadow(-10px 10px 0px $green); }
+  67% { @include box-shadow(-10px 10px 0px $peach); }
+  100% { @include box-shadow(-10px 10px 0px $rose); }
   }
   @keyframes cover-index {
-  0% { background-color: #f99; }
-  33% { background-color: #9f9; }
-  67% { background-color: #99f; }
-  100% { background-color: #f99; }
+  0% { @include box-shadow(-10px 10px 0px $blue); }
+  33% { @include box-shadow(-10px 10px 0px $green); }
+  67% { @include box-shadow(-10px 10px 0px $peach); }
+  100% { @include box-shadow(-10px 10px 0px $rose); }
   }
 // Media Queries
 @media only screen
