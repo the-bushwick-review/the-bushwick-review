@@ -14,10 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: The Bushwick Review
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: The Bushwick Review is a literary and art magazine that features over 20 contributors each issue. Over the years, we've featured short stories, essays, poetry, photography, paintings, drawings, architecture, plays, comics, and more. The current issue is always only available in print.
 
 url: "http://www.thebushwickreview.com"
 baseurl:
