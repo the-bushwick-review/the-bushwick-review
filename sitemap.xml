@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>http://thebushwickreview.com</loc>
+    <image:image>
+       <image:loc>http://www.thebushwickreview.com/assets/img/issue-7-cover.jpg</image:loc>
+       <image:caption>The Bushwick Review is a literary and art magazine that features over 20 contributors each issue. Over the years, we've featured short stories, essays, poetry, photography, paintings, drawings, architecture, plays, comics, and more. The current issue is always only available in print.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://thebushwickreview.com/issues</loc>
+    <image:image>
+       <image:loc>http://www.thebushwickreview.com/assets/img/issue-07-cover.jpg</image:loc>
+       <image:caption>The Bushwick Review is a literary and art magazine that features over 20 contributors each issue. Over the years, we've featured short stories, essays, poetry, photography, paintings, drawings, architecture, plays, comics, and more. The current issue is always only available in print.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://thebushwickreview.com/about</loc>
+    <image:image>
+       <image:loc>http://www.thebushwickreview.com/assets/img/the-bushwick-review-issue-7-og.jpg</image:loc>
+       <image:caption>The Bushwick Review is a literary and art magazine that features over 20 contributors each issue. Over the years, we've featured short stories, essays, poetry, photography, paintings, drawings, architecture, plays, comics, and more. The current issue is always only available in print.</image:caption>
+    </image:image>
+  </url>
+</urlset>
