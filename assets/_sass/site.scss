@@ -219,6 +219,9 @@ h2.inside-the-issue{
 .btn-buy, .btn-read{
   @include btn-standard($blue !important, $white, $blue, $white !important, $blue, $blue, 0.75, 1);
 }
+.btn-splash {
+  @include btn-standard($body !important, #FCE671, $body, #FCE671 !important, $body, $body, 1, 1);
+}
 .btn-soldout{
   @include btn-standard($grey-9, $white, $grey-9, $grey-9, $white, $grey-9, 0.75, 1);
   cursor:not-allowed;
@@ -232,6 +235,16 @@ h2.inside-the-issue{
   }
   i.fa{
     margin-right:15px;
+  }
+}
+.btn-m{
+  font-size:1em;
+  padding:6px 12px;
+  &:active, &:hover, &:focus{
+    padding:6px 12px;
+  }
+  i.fa{
+    margin-right:6px;
   }
 }
 // About index
@@ -271,15 +284,15 @@ h2.inside-the-issue{
   i{
     font-size:.6em;
     margin-right:10px;
-    color:$white;
+    color:$body;
   }
   a{
-    color:$white;
+    color:$body;
     display:inline-block;
-    border-color:$white;
+    border-color:$body;
     &:hover{
       color:$body;
-      border-color:$body;
+      border-color:$white;
     }
   }
 }
@@ -470,4 +483,52 @@ and (max-width : 550px) {
   .featuring{
     font-size:0.8em;
   }
+}
+//splash background
+.splash-bg {
+  background-color: #FCE671;
+  background-image: url('../img/splash-bg.svg');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.splash-text {
+  font-size:1.75em;
+}
+
+.splash-marquee {
+  position:fixed;
+  background-color: #FCE671;
+  border-top:2px solid $body;
+  padding-top:10px;
+  left:0;
+  bottom:0;
+}
+
+.splash-logo {
+  padding:0 25%;
+  margin-top:24px;
+}
+
+.splash-cover {
+  padding:10% 25% 0% 25%;
+}
+
+.splash-button-container {
+  margin-top:32px;
+}
+
+.splash-2col-block {
+  margin:48px 0px;
+}
+
+.splash-2col-block-border-right {
+  border-right:1px solid $body;
+}
+
+.splash-donate-text {
+  line-height:120%;
+  margin-top:24px;
 }

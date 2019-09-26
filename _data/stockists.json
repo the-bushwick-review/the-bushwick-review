@@ -82,13 +82,13 @@
     },
     {
     "id":"006",
-    "name":"Skylight Books",
-    "address":"1818 N Vermont Ave",
-    "city":"Los Angeles",
-    "state":"CA",
-    "zip":"90027",
+    "name":"The Lowry Estate",
+    "address":"23023 Orchard Lake Road, Building F",
+    "city":"Farmington",
+    "state":"MI",
+    "zip":,
     "description":,
-    "url":"http://www.skylightbooks.com/"
+    "url":"http://www.thelowryestate.com/"
     },
     {
     "id":"003",

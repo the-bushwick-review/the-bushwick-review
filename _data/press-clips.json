@@ -1,6 +1,17 @@
 {
   "press-clips":[
     {
+    "id":"008",
+    "name":"Stack Magazines",
+    "title":"Five things we loved about The Bushwick Review",
+    "month":"10",
+    "day":"3",
+    "year":"2017",
+    "author":"Stack Magazines",
+    "url":"https://www.stackmagazines.com/literature/the-bushwick-review-magazine/",
+    "img":,
+    },
+    {
     "id":"007",
     "name":"Dazed Digital",
     "title":"The alt-lit names to look out for in 2016",
