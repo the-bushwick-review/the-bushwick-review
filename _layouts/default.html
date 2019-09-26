@@ -1,3 +1,7 @@
 {% include head.html %}
-{{ content }}    
-{% include footer.html %}
+{{ content }}
+{% if page.body-class %}
+
+{% else %}
+  {% include footer.html %}
+{% endif %}

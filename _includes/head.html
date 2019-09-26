@@ -48,4 +48,4 @@
     {% endfor %}
   {% endif %}
 </head>
-<body>
+<body {% if page.body-class %} class="{{ page.body-class }}" {% endif %}>
