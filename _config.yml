@@ -26,3 +26,4 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - .jekyll-cache

@@ -53,3 +53,4 @@ build-iPhoneSimulator/
 #jekyll
 _site
 .sass-cache
+.jekyll-cache
