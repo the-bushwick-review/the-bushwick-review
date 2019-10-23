@@ -173,18 +173,72 @@ h2.inside-the-issue{
     text-transform: uppercase;
   }
 }
+// Index splash background
+.splash-bg {
+  background-color: $yellow;
+  background-image: url('../img/splash-bg.svg');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.splash-text {
+  font-size: 1.75em;
+}
+.splash-marquee {
+  border-top: 2px solid $body;
+  padding-top: 10px;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  position: relative;
+  .splash-inner{
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -moz-animation: bwr-marquee 30s linear infinite;
+    -webkit-animation: bwr-marquee 30s linear infinite;
+    animation: bwr-marquee 30s linear infinite;
+    white-space: nowrap;
+    animation-fill-mode: both;
+  }
+}
+.splash-logo {
+  padding: 0 25%;
+  margin-top: 24px;
+}
+.splash-cover {
+  padding: 10% 25% 0% 25%;
+}
+.splash-button-container {
+  margin-top: 32px;
+}
+.splash-2col-block {
+  margin: 48px 0px;
+}
+.splash-2col-block-border-right {
+  border-right: 1px solid $body;
+}
+.splash-donate-text {
+  line-height: 120%;
+  margin-top: 24px;
+}
 // Index modal
 #modal-ocho{
-
   .modal-dialog{
-    max-width: 80%;
+    max-width: 65%;
   }
-
-  .splash-marquee{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
+}
+.modal-backdrop{
+  background-color: $white;
+  background-image: url('../img/splash-bg.svg');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.modal-backdrop.show{
+  opacity: 0.5;
 }
 // Issues Index
 .issue{
@@ -233,7 +287,7 @@ h2.inside-the-issue{
   @include btn-standard($blue !important, $white, $blue, $white !important, $blue, $blue, 0.75, 1);
 }
 .btn-splash {
-  @include btn-standard($body !important, #FCE671, $body, #FCE671 !important, $body, $body, 1, 1);
+  @include btn-standard($body !important, $yellow, $body, $yellow !important, $body, $body, 1, 1);
 }
 .btn-soldout{
   @include btn-standard($grey-9, $white, $grey-9, $grey-9, $white, $grey-9, 0.75, 1);
@@ -471,57 +525,27 @@ footer{
   67% { @include box-shadow(-10px 10px 0px $peach); }
   100% { @include box-shadow(-10px 10px 0px $rose); }
   }
-
-  //splash background
-  .splash-bg {
-    background-color: #FCE671;
-    background-image: url('../img/splash-bg.svg');
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  // Marquee
+  @-moz-keyframes bwr-marquee {
+   0%   { -moz-transform: translateX(100%); }
+   100% { -moz-transform: translateX(-4500px); }
   }
-
-  .splash-text {
-    font-size: 1.75em;
+  @-webkit-keyframes bwr-marquee {
+   0%   { -webkit-transform: translateX(100%); }
+   100% { -webkit-transform: translateX(-4500px); }
   }
-
-  .splash-marquee {
-    position: fixed;
-    background-color: #FCE671;
-    border-top: 2px solid $body;
-    padding-top: 10px;
-    left: 0;
-    bottom: 0;
+  @keyframes bwr-marquee {
+   0%   {
+   -moz-transform: translateX(100%); /* Firefox bug fix */
+   -webkit-transform: translateX(100%); /* Firefox bug fix */
+   transform: translateX(100%);
+   }
+   100% {
+   -moz-transform: translateX(-4500px); /* Firefox bug fix */
+   -webkit-transform: translateX(-4500px); /* Firefox bug fix */
+   transform: translateX(-4500px);
+   }
   }
-
-  .splash-logo {
-    padding: 0 25%;
-    margin-top: 24px;
-  }
-
-  .splash-cover {
-    padding: 10% 25% 0% 25%;
-  }
-
-  .splash-button-container {
-    margin-top: 32px;
-  }
-
-  .splash-2col-block {
-    margin: 48px 0px;
-  }
-
-  .splash-2col-block-border-right {
-    border-right: 1px solid $body;
-  }
-
-  .splash-donate-text {
-    line-height: 120%;
-    margin-top: 24px;
-  }
-
-
 // Media Queries
 @media only screen
 and (max-width : 550px) {
