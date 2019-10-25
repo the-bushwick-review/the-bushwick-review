@@ -1,3 +1,3 @@
-$(window).on('load', function(){
+$(document).ready(function () {
   $('#modal-ocho').modal('show');
 });

@@ -2,10 +2,11 @@
 layout: default
 js-head: index-modal.js
 ---
+{% include index-modal.html %}
 {% include nav.html %}
-<div class="row no-gutters d-block d-sm-none">
+<div class="row no-gutters d-inline-block d-sm-none">
   <div class="col-12">
-    <img class="issue-cover img-fluid mb-4" src="{{ site.url }}{{ site.baseurl }}/assets/img/issue-7-cover.jpg" />
+    <img class="issue-cover img-fluid mb-4" src="{{ site.url }}{{ site.baseurl }}/assets/img/issue-08-cover-index.jpg" />
   </div>
 </div>
 <div class="container">
@@ -23,4 +24,3 @@ js-head: index-modal.js
   </div>
 </div>
 {% include issue-carousel.html %}
-{% include index-modal.html %}

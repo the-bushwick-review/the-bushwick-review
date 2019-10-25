@@ -124,7 +124,7 @@ a{
 }
 // Index hero
 .issue-cover{
-  @include transform(translateZ(1px) rotate(-4deg));
+  @include transform(translateZ(0) rotate(-4deg));
   @include box-shadow(-10px 10px 0px $blue);
   -webkit-animation: cover-index 30s linear 2s infinite;
   animation: cover-index 30s linear 2s infinite;
@@ -203,19 +203,6 @@ h2.inside-the-issue{
     animation-fill-mode: both;
   }
 }
-.splash-logo {
-  padding: 0 25%;
-  margin-top: 24px;
-}
-.splash-cover {
-  padding: 10% 25% 0% 25%;
-}
-.splash-button-container {
-  margin-top: 32px;
-}
-.splash-2col-block {
-  margin: 48px 0px;
-}
 .splash-2col-block-border-right {
   border-right: 1px solid $body;
 }
@@ -227,10 +214,20 @@ h2.inside-the-issue{
 #modal-ocho{
   .modal-dialog{
     max-width: 65%;
+
+    .modal-content{
+      border: none;
+
+      .close{
+        color: $blue;
+        opacity: 1;
+        text-shadow: none;
+      }
+    }
   }
 }
 .modal-backdrop{
-  background-color: $white;
+  background-color: $yellow;
   background-image: url('../img/splash-bg.svg');
   background-size: cover;
   background-position: 50% 50%;
@@ -238,7 +235,7 @@ h2.inside-the-issue{
   background-attachment: fixed;
 }
 .modal-backdrop.show{
-  opacity: 0.5;
+  opacity: 0.7;
 }
 // Issues Index
 .issue{
@@ -426,6 +423,9 @@ ol.carousel-indicators{
 }
 .arrow-left,.arrow-right{
   outline: none !important;
+  position: relative;
+  z-index: 100;
+
   &:hover{
     border-color: $body;
     border-width: 4px;
@@ -563,7 +563,7 @@ and (max-width : 550px) {
     }
   }
   .issue-cover{
-    @include transform(translateZ(1px) rotate(0deg));
+    @include transform(translateZ(0) rotate(0deg));
     @include box-shadow(none);
     -webkit-animation: none;
     animation: none;
@@ -576,5 +576,10 @@ and (max-width : 550px) {
 and (max-width : 768px) {
   .splash-2col-block-border-right {
     border-right: none;
+  }
+  #modal-ocho{
+    .modal-dialog{
+      max-width: 100%;
+    }
   }
 }
