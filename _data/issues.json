@@ -1,6 +1,21 @@
 {
   "issues":[
     {
+    "id":"008",
+    "name":"The Bushwick Review",
+    "number":"VIII",
+    "description":"84 color pages, perfect bound.",
+    "img":"issue-08-cover.jpg",
+    "buy-url":"https://thebushwickreview.bigcartel.com/product/the-bushwick-review-viii",
+    "read-url":,
+    "price":"10.00",
+    "sold-out":,
+    "month":"10",
+    "day":"29",
+    "year":"2019",
+    "contributors":"Susana Aho, Sarah Jean Alexander, Jane Argodale, Max Baitinger, William Bottini, Liz Bowen, Nora Colie, Constance Crane, Oscar D'artois, Genise Deal, Kenton Deangeli, Katya Dorokina, Taleen Kali, Annu Kilpeläinen, Neon Saltwater, Rebecca Nison, Sheryl Oppenheim, Janelle Poe, Michele Rosenthal, Derrick Schultz, Lucy K Shaw, Bud Smith, Thom Smith, Sadie Rebecca Starnes"
+    },
+    {
     "id":"007",
     "name":"The Bushwick Review",
     "number":"VII",
