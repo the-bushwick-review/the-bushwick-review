@@ -1,0 +1,104 @@
+{
+  "stockists":[
+    {
+    "id":"009",
+    "name":"artbook @ MoMA PS1",
+    "address":"22-25 Jackson Ave ",
+    "city":"Long Island City",
+    "state":"NY",
+    "zip":"11101",
+    "description":,
+    "url":"http://www.artbook.com/artbookps1.html"
+    },
+    {
+    "id":"005",
+    "name":"Atomic Books",
+    "address":"3620 Falls Rd",
+    "city":"Baltimore",
+    "state":"MD",
+    "zip":"21211",
+    "description":,
+    "url":"https://atomicbooks.com/"
+    },
+    {
+    "id":"008",
+    "name":"Bluestockings",
+    "address":"172 Allen St",
+    "city":"New York",
+    "state":"NY",
+    "zip":"10002",
+    "description":,
+    "url":"http://bluestockings.com/"
+    },
+    {
+    "id":"010",
+    "name":"The Mall",
+    "address":"916 Springdale Road",
+    "city":"Austin",
+    "state":"TX",
+    "zip":"78702",
+    "description":,
+    "url":"http://www.themall.is/",
+    },
+    {
+    "id":"007",
+    "name":"McNally Jackson",
+    "address":"52 Prince St",
+    "city":"New York",
+    "state":"NY",
+    "zip":"10012",
+    "description":,
+    "url":"http://www.mcnallyjackson.com/"
+    },
+    {
+    "id":"004",
+    "name":"Molasses Books",
+    "address":"770 Hart St",
+    "city":"Brooklyn",
+    "state":"NY",
+    "zip":,
+    "description":,
+    "url":"https://www.facebook.com/MolassesBooks/"
+    },
+    {
+    "id":"001",
+    "name":"Quimby's Chicago",
+    "address":"1854 W. North Ave",
+    "city":"Chicago",
+    "state":"IL",
+    "zip":,
+    "description":,
+    "url":"http://www.quimbys.com/"
+    },
+    {
+    "id":"002",
+    "name":"Quimby's NYC",
+    "address":"536 Metropolitan Ave",
+    "city":"Brooklyn",
+    "state":"NY",
+    "zip":,
+    "description":,
+    "url":"https://www.facebook.com/quimbysnyc/"
+    },
+    {
+    "id":"006",
+    "name":"The Lowry Estate",
+    "address":"23023 Orchard Lake Road, Building F",
+    "city":"Farmington",
+    "state":"MI",
+    "zip":,
+    "description":,
+    "url":"http://www.thelowryestate.com/"
+    },
+    {
+    "id":"003",
+    "name":"Tiny Hero at Little Skips",
+    "address":"941 Willoughby Ave",
+    "city":"Brooklyn",
+    "state":"NY",
+    "zip":,
+    "description":,
+    "url":"http://littleskips.nyc/"
+    }
+  ]
+}
