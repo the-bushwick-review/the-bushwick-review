@@ -361,6 +361,11 @@ h2.inside-the-issue{
   }
 }
 // Container wraps
+.container-wrap--pink{
+  width: 100%;
+  height: 100%;
+  background-color: $pink;
+}
 .container-wrap--peach{
   width: 100%;
   height: 100%;
