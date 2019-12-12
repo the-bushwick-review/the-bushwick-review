@@ -3,7 +3,7 @@
     {
     "id":"001",
     "name":"artbook @ MoMA PS1",
-    "address":"22-25 Jackson Ave",
+    "address":"22-25 Jackson Avenue",
     "city":"Long Island City",
     "state":"NY",
     "zip":,
@@ -11,9 +11,19 @@
     "url":"http://www.artbook.com/artbookps1.html"
     },
     {
+    "id":"006",
+    "name":"Baby Skips",
+    "address":"1158 Myrtle Avenue",
+    "city":"Brooklyn",
+    "state":"NY",
+    "zip":,
+    "description":,
+    "url":"https://littleskips.nyc/baby-skips"
+    },
+    {
     "id":"002",
     "name":"CASA Magazines",
-    "address":"22 8th Ave",
+    "address":"22 8th Avenue",
     "city":"New York",
     "state":"NY",
     "zip":,
@@ -22,13 +32,73 @@
     },
     {
     "id":"003",
+    "name":"McNally Jackson",
+    "address":"52 Prince Street",
+    "city":"New York",
+    "state":"NY",
+    "zip":,
+    "description":,
+    "url":"http://www.mcnallyjackson.com/"
+    },
+    {
+    "id":"004",
+    "name":"McNally Jackson Williamsburg",
+    "address":"76 N 4th Street, Unit G",
+    "city":"Brooklyn",
+    "state":"NY",
+    "zip":,
+    "description":,
+    "url":"http://www.mcnallyjackson.com/"
+    },
+    {
+    "id":"005",
     "name":"Quimby’s NYC",
-    "address":"536 Metropolitan Ave",
+    "address":"536 Metropolitan Avenue",
     "city":"Brooklyn",
     "state":"NY",
     "zip":,
     "description":,
     "url":"https://www.facebook.com/quimbysnyc/"
+    },
+    {
+    "id":"007",
+    "name":"Atomic Books",
+    "address":"3620 Falls Road",
+    "city":"Baltimore",
+    "state":"MD",
+    "zip":,
+    "description":,
+    "url":"https://atomicbooks.com/"
+    },
+    {
+    "id":"008",
+    "name":"Powell’s City of Books",
+    "address":"1005 W Burnside Street",
+    "city":"Portland",
+    "state":"OR",
+    "zip":,
+    "description":,
+    "url":"http://www.powells.com/"
+    },
+    {
+    "id":"009",
+    "name":"Quimby’s Chicago",
+    "address":"1854 W North Avenue",
+    "city":"Chicago",
+    "state":"IL",
+    "zip":,
+    "description":,
+    "url":"http://www.quimbys.com/"
+    },
+    {
+    "id":"010",
+    "name":"Small World Books",
+    "address":"425 North Street",
+    "city":"Rochester",
+    "state":"NY",
+    "zip":,
+    "description":,
+    "url":"https://www.facebook.com/smallworldbooks/"
     }
   ]
 }
